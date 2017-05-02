@@ -1,0 +1,18 @@
+h1{
+    color: #F00;
+}
+.vert{
+    color: #96ff3a;
+}
+li {
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 1.4em;
+}
+li a:hover {
+    text-decoration: none;
+}
+.navbar-header{
+    margin-top: 20px;
+    margin-bottom: 20px
+}
