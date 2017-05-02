@@ -70,6 +70,10 @@ wp-config.php
 wp-includes
 wp-content/languages
 wp-content/upgrade
+wp-content/themes/mythwp
+wp-content/themes/twentyfifteen
+wp-content/themes/twentyseventeen
+wp-content/themes/twentysixteen
 /.htaccess
 /license.txt
 /readme.html
