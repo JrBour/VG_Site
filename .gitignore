@@ -65,17 +65,11 @@ fabric.properties
 
 ### WordPress ###
 *.log
+wp-admin
 wp-config.php
-wp-content/advanced-cache.php
-wp-content/backup-db/
-wp-content/backups/
-wp-content/blogs.dir/
-wp-content/cache/
-wp-content/upgrade/
-wp-content/uploads/
-wp-content/wp-cache-config.php
-wp-content/plugins/hello.php
-
+wp-includes
+wp-content/languages
+wp-content/upgrade
 /.htaccess
 /license.txt
 /readme.html
@@ -84,3 +78,5 @@ wp-content/plugins/hello.php
 
 
 # End of https://www.gitignore.io/api/phpstorm,wordpress
+.idea/VG_Site.iml
+.idea/modules.xml
