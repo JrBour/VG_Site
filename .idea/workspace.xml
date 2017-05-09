@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a664e92-06cb-45fa-8ddb-18bf2c3c34a3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/html5blank-stable/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/html5blank-stable/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/html5blank-stable/index.php" afterPath="$PROJECT_DIR$/wp-content/themes/html5blank-stable/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/html5blank-stable/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/html5blank-stable/style.css" />
-    </list>
+    <list default="true" id="1a664e92-06cb-45fa-8ddb-18bf2c3c34a3" name="Default" comment="" />
     <ignored path="VG_Site.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -47,8 +42,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/html5blank-stable/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="499" column="21" selection-start-line="499" selection-start-column="21" selection-end-line="499" selection-end-column="21" />
+            <state relative-caret-position="424">
+              <caret line="521" column="5" selection-start-line="521" selection-start-column="5" selection-end-line="521" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -245,12 +240,12 @@
       <workItem from="1493920030206" duration="5032000" />
       <workItem from="1493983174510" duration="7242000" />
       <workItem from="1494233944578" duration="827000" />
-      <workItem from="1494329574888" duration="2953000" />
+      <workItem from="1494329574888" duration="3432000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43230000" />
+    <option name="totallyTimeSpent" value="43709000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -481,8 +476,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/html5blank-stable/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="499" column="21" selection-start-line="499" selection-start-column="21" selection-end-line="499" selection-end-column="21" />
+        <state relative-caret-position="424">
+          <caret line="521" column="5" selection-start-line="521" selection-start-column="5" selection-end-line="521" selection-end-column="5" />
           <folding />
         </state>
       </provider>
