@@ -1,0 +1,676 @@
+/*
+	Theme Name: HTML5 Blank
+	Theme URI: http://html5blank.com
+	Description: HTML5 Blank WordPress Theme
+	Version: 1.4.3
+	Author: Todd Motto (@toddmotto)
+	Author URI: http://toddmotto.com
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+/* html element 62.5% font-size for REM use */
+html {
+	font-size:62.5%;
+}
+body {
+	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color:#444;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+/* clear */
+.clear:before,
+.clear:after {
+    content:' ';
+    display:table;
+}
+
+.clear:after {
+    clear:both;
+}
+.clear {
+    *zoom:1;
+}
+img {
+	max-width:100%;
+	vertical-align:bottom;
+}
+a {
+	color:#444;
+	text-decoration:none;
+}
+a:hover {
+	color:#444;
+}
+a:focus {
+	outline:0;
+}
+a:hover,
+a:active {
+	outline:0;
+}
+input:focus {
+	outline:0;
+	border:1px solid #04A4CC;
+}
+
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+/* wrapper */
+.wrapper {
+	width:100%;
+	position:relative;
+}
+/* header */
+.header {
+
+}
+/* logo */
+.logo {
+
+}
+.logo-img {
+
+}
+/* nav */
+.nav {
+
+}
+/* sidebar */
+.sidebar {
+
+}
+/* footer */
+.footer {
+	background-color: #4c4c4d;
+}
+/*------------------------------------*\
+	NAVBAR
+\*------------------------------------*/
+
+#navbar:before {
+	content:'\A';
+	display:block;
+	width:100vw;
+	height:65px;
+	position:absolute;
+	background:white;
+	top:0;
+	z-index:-1;
+}
+#navbar:after {
+	content:url(https://d13yacurqjgara.cloudfront.net/users/305445/avatars/small/m-icon-sml.png?1364435283);
+	display:block;
+	height:85px;
+	position:absolute;
+	top:0;
+	z-index:1;
+	border-radius: 50%;
+	width: 175px;
+	background-color:white;
+	margin:0 auto;
+	left: 0;
+	right: 0;
+}
+#navbar{
+	padding:20px 0 0;
+	width:100%;
+	height:40px;
+	background:white;
+	text-align: center;
+}
+#navbar a{
+	width:25%;
+	margin: 0 40px;
+	text-decoration:none;
+	/* extra styling for shits and giggles */
+	color:black;
+	font-weight:600;
+	letter-spacing:0.025em;
+	text-transform:uppercase;
+}
+a:hover,a:active,a:focus,a:visited {
+	text-decoration:none;
+	outline:none;
+}
+
+#navbar a:nth-child(2) {
+	margin-right:100px
+}
+
+#navbar a:nth-child(3) {
+	margin-left:100px
+}
+/*------------------------------------*\
+    COACHING SPORTIF
+\*------------------------------------*/
+.partie_cours{
+	background-color: white;
+	color: black;
+}
+
+.partie_sportif{
+	background-color: #cecec6;
+	height: 400px;
+}
+#img_sportif{
+	background-image: url("../html5blank-stable/img/2.png");
+	height: 289px;
+	width: 438px;
+}
+#partie_sport{
+	color: #000000;
+	margin-left: 90px;
+}
+.partie_sportif2{
+	background-color: #091d49;
+	height: 400px;
+	color: white;
+}
+#img_sportif2{
+	background-image: url("../html5blank-stable/img/2.png");
+	height: 289px;
+	width: 438px;
+}
+#partie_sport2{
+	color: white;
+	margin-left: 90px;
+	text-align: right;
+	vertical-align: middle;
+}
+.partie_sportif2 p{
+	text-align: right;
+}
+/*------------------------------------*\
+    BLOG
+\*------------------------------------*/
+.lib-panel {
+	margin-bottom: 20Px;
+}
+.lib-panel img {
+	width: 100%;
+	background-color: transparent;
+}
+
+.lib-panel .row,
+.lib-panel .col-md-6 {
+	padding: 0;
+	background-color: #FFFFFF;
+}
+
+
+.lib-panel .lib-row {
+	padding: 0 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header {
+	background-color: #FFFFFF;
+	font-size: 20px;
+	padding: 10px 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header .lib-header-seperator {
+	height: 2px;
+	width: 26px;
+	background-color: #d9d9d9;
+	margin: 7px 0 7px 0;
+}
+
+.lib-panel .lib-row.lib-desc {
+	position: relative;
+	height: 100%;
+	display: block;
+	font-size: 13px;
+}
+.lib-panel .lib-row.lib-desc a{
+	position: absolute;
+	width: 100%;
+	bottom: 10px;
+	left: 20px;
+}
+
+.row-margin-bottom {
+	margin-bottom: 20px;
+}
+
+.box-shadow {
+	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+}
+
+.no-padding {
+	padding: 0;
+}
+/*------------------------------------*\
+    COURS
+\*------------------------------------*/
+.partie_cours h1{
+	text-align: center;
+	font-size: 38px;
+	margin: 0.67em 0;
+	text-decoration:underline
+}
+
+/*------------------------------------*\
+    SLOGAN
+\*------------------------------------*/
+
+.container{
+	background-image: url("../html5blank-stable/img/partie1.jpg");
+	background-repeat: no-repeat;
+	background-position-y: -70px;
+	background-size: 100%;
+	width: 100%;
+	height: 150px;
+}
+#slogan1{
+	font-size: 35px;
+	margin: 204px;
+	text-align: center;
+	color: white;
+}
+#slogan2{
+	font-size: 27px;
+	margin: -188px;
+	text-align: center;
+	color: white;
+}
+
+
+/*------------------------------------*\
+    FOOTER
+\*------------------------------------*/
+.copyright{
+	color: white;
+	text-align: center;
+}
+#liens_footer{
+	color: white;
+	margin-left: 140px;
+	margin-top: 25px;
+}
+	#social {
+	margin: 20px 10px;
+	text-align: center;
+}
+
+.smGlobalBtn{ /* global button class */
+display: inline-block;
+position: relative;
+cursor: pointer;
+width: 50px;
+height: 50px;
+box-shadow: 0 2px 2px #999;
+padding: 0px;
+text-decoration: none;
+text-align: center;
+color: #fff;
+font-size: 25px;
+font-weight: normal;
+line-height: 2em;
+border-radius: 25px;
+-moz-border-radius:25px;
+-webkit-border-radius:25px;
+}
+
+	/* facebook button class*/
+.facebookBtn{
+background: #4060A5;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+font-family: "FontAwesome";
+content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+color: #4060A5;
+background: #fff;
+}
+
+	/* twitter button class*/
+.twitterBtn{
+background: #00ABE3;
+}
+
+.twitterBtn:before{
+font-family: "FontAwesome";
+content: "\f099"; /* add twitter icon */
+}
+
+.twitterBtn:hover{
+color: #00ABE3;
+background: #fff;
+}
+
+	/* google plus button class*/
+.instaBtn{
+background: #e64522;
+}
+
+.instaBtn:before{
+font-family: "FontAwesome";
+content: "\f16d"; /* add googleplus icon */
+}
+
+.instaBtn:hover{
+color: #e64522;
+background: #fff;
+}
+
+#contact_footer{
+	color: white;
+	text-align: right;
+}
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+@media only screen and (min-width:320px) {
+
+	/*------------------------------------*\
+        SLOGAN
+    \*------------------------------------*/
+	#slogan1 {
+		font-size: 16px;
+		margin: 53px;
+	}
+
+	#slogan2 {
+		font-size: 13px;
+		margin: -47px;
+	}
+
+	/*------------------------------------*\
+        COACHING SPORTIF
+    \*------------------------------------*/
+	.partie_sportif {
+		height: 400px;
+	}
+
+	#img_sportif {
+		height: 89px;
+		width: 200px;
+	}
+
+	/*COURS*/
+	.partie_cours h1 {
+		text-align: center;
+		font-size: 26px;
+	}
+
+	.partie_sportif {
+		height: 400px;
+	}
+
+	#img_sportif {
+		width: 100%;
+		height: 200px;
+	}
+	#coaching_sportif{
+		text-align: center;
+		margin-left: -80px;
+		height: 300px;
+	}
+/*------------------------------------*\
+    COACHING SPORTIF 2
+\*------------------------------------*/
+	.partie_sportif2 {
+		height: 400px;
+	}
+
+	#img_sportif2 {
+		height: 89px;
+		width: 200px;
+	}
+
+	/*COURS*/
+	.partie_cours2 h1 {
+		text-align: center;
+		font-size: 26px;
+	}
+
+	.partie_sportif2 {
+		height: 400px;
+	}
+
+	#img_sportif2 {
+		width: 100%;
+		height: 200px;
+	}
+	#coaching_sportif2{
+		text-align: center;
+		height: 300px;
+	}
+
+	/*------------------------------------*\
+        BLOG
+    \*------------------------------------*/
+	.lib-panel {
+		margin-bottom: 10Px;
+	}
+	.lib-panel img {
+		width: 100%;
+		background-color: transparent;
+	}
+
+
+	.lib-panel .lib-row {
+		padding: 0 20px 0 20px;
+	}
+
+	.lib-panel .lib-row.lib-header {
+		background-color: #FFFFFF;
+		font-size: 14px;
+	}
+
+	.lib-panel .lib-row.lib-header .lib-header-seperator {
+		height: 2px;
+		width: 16px;
+		margin: 7px 0 7px 0;
+	}
+
+	.lib-panel .lib-row.lib-desc {
+		position: relative;
+		height: 100%;
+		display: block;
+		font-size: 8px;
+	}
+	.lib-panel .lib-row.lib-desc a{
+		bottom: 10px;
+		left: 20px;
+	}
+
+	.row-margin-bottom {
+		margin-bottom: 20px;
+	}
+
+}
+@media only screen and (min-width:480px) {
+
+}
+@media only screen and (min-width:768px) {
+
+}
+@media only screen and (min-width:1024px) {
+
+}
+@media only screen and (min-width:1140px) {
+
+}
+@media only screen and (min-width:1280px) {
+
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+	   only screen and (min-resolution:144dpi) {
+
+}
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+::selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+
+.alignnone {
+	margin:5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+	display:block;
+	margin:5px auto 5px auto;
+}
+.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+a img.alignnone {
+	margin:5px 20px 20px 0;
+}
+a img.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.aligncenter {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.wp-caption {
+	background:#FFF;
+	border:1px solid #F0F0F0;
+	max-width:96%;
+	padding:5px 3px 10px;
+	text-align:center;
+}
+.wp-caption.alignnone {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignright {
+	margin:5px 0 20px 20px;
+}
+.wp-caption img {
+	border:0 none;
+	height:auto;
+	margin:0;
+	max-width:98.5%;
+	padding:0;
+	width:auto;
+}
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	font-size:11px;
+	line-height:17px;
+	margin:0;
+	padding:0 4px 5px;
+}
+.sticky {
+
+}
+.bypostauthor {
+
+}
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+
+@media print {
+	* {
+		background:transparent !important;
+		color:#000 !important;
+		box-shadow:none !important;
+		text-shadow:none !important;
+	}
+	a,
+	a:visited {
+		text-decoration:underline;
+	}
+	a[href]:after {
+		content:" (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content:" (" attr(title) ")";
+	}
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content:"";
+	}
+	pre,blockquote {
+		border:1px solid #999;
+		page-break-inside:avoid;
+	}
+	thead {
+		display:table-header-group;
+	}
+	tr,img {
+		page-break-inside:avoid;
+	}
+	img {
+		max-width:100% !important;
+	}
+	@page {
+		margin:0.5cm;
+	}
+	p,
+	h2,
+	h3 {
+		orphans:3;
+		widows:3;
+	}
+	h2,
+	h3 {
+		page-break-after:avoid;
+	}
+}
