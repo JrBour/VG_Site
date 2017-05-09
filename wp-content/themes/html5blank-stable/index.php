@@ -20,6 +20,7 @@
 </div>
 
 <div class="partie_sportif">
+	<div class="col-md-6" id="img_sportif"></div>
 	<div class="col-md-6" id="coaching_sportif">
 		<h1 id="partie_sport">Coaching Sportif</h1>
 		<p id="partie_sport">
@@ -29,12 +30,10 @@
 		</p>
 
 	</div>
-	<div class="col-md-6" id="img_sportif"></div>
 </div>
 
 <div class="partie_sportif2">
 	<div class="col-md-6" id="img_sportif2"></div>
-
 	<div class="col-md-6" id="coaching_sportif2">
 		<h1 id="partie_sport2">Coaching Sportif</h1>
 		<p id="partie_sport2">

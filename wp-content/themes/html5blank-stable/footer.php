@@ -3,8 +3,8 @@
 <div class="row">
 	<div class="col-md-4" id="liens_footer">
 		<h1>Liens</h1>
-		<h5>Présentation</h5>
-		<h5>Site Map</h5>
+		<h5>Qui suis-je ?</h5>
+		<h5>Sitemaps</h5>
 	</div>
 	<div class="col-md-4" id="logo_footer">
 		<img src="#">
