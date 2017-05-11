@@ -427,11 +427,6 @@ background: #fff;
 		height: 400px;
 	}
 
-	#img_sportif {
-		height: 89px;
-		width: 200px;
-	}
-
 	/*COURS*/
 	.partie_cours h1 {
 		text-align: center;
@@ -443,8 +438,11 @@ background: #fff;
 	}
 
 	#img_sportif {
-		width: 100%;
-		height: 200px;
+		background-repeat: no-repeat;
+		background-size: 61%;
+		height: 206px;
+		width: 289px;
+		margin-left: 31%;
 	}
 	#coaching_sportif{
 		text-align: center;
@@ -479,7 +477,10 @@ background: #fff;
 	}
 	#img_sportif2{
 		background-repeat: no-repeat;
-		background-size: 40%;
+		background-size: 61%;
+		height: 206px;
+		width: 289px;
+		margin-left: 31%;
 	}
 	#coaching_sportif2{
 		text-align: center;
@@ -522,7 +523,7 @@ background: #fff;
 		position: relative;
 		height: 100%;
 		display: block;
-		font-size: 8px;
+		font-size: 14px;
 	}
 	.lib-panel .lib-row.lib-desc a{
 		bottom: 10px;
@@ -531,6 +532,20 @@ background: #fff;
 
 	.row-margin-bottom {
 		margin-bottom: 20px;
+	}
+/*------------------------*\
+	FOOTER
+\*------------------------*/
+	#liens_footer{
+		text-align: left;
+	}
+	#logo_footer{
+		margin-left: 43%;
+	}
+	#contact_footer{
+		text-align: left;
+		margin-left: 140px;
+		margin-top: 25px;
 	}
 
 }
