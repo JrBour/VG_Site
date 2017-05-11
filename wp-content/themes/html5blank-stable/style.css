@@ -12,10 +12,13 @@
 */
 
 /*------------------------------------*\
-    MAIN
+MAIN
 \*------------------------------------*/
 
 /* global box-sizing */
+.col-lg-6{
+	padding:0;
+}
 *,
 *:after,
 *:before {
@@ -402,7 +405,7 @@ background: #fff;
     RESPONSIVE
 \*------------------------------------*/
 
-@media only screen and (min-width:320px) {
+@media only screen and (min-width:320px) and (max-width:768px) {
 
 	/*------------------------------------*\
         SLOGAN
@@ -461,7 +464,7 @@ background: #fff;
 	}
 
 	/*COURS*/
-	.partie_cours2 h1 {
+	.partie_cours h1 {
 		text-align: center;
 		font-size: 26px;
 	}
@@ -470,15 +473,24 @@ background: #fff;
 		height: 400px;
 	}
 
-	#img_sportif2 {
-		width: 100%;
-		height: 200px;
+	#img_sportif{
+		background-repeat: no-repeat;
+		background-size: 40%;
+	}
+	#img_sportif2{
+		background-repeat: no-repeat;
+		background-size: 40%;
 	}
 	#coaching_sportif2{
 		text-align: center;
+		margin-left: -80px;
 		height: 300px;
 	}
-
+	#partie_sport2 {
+		margin-left: 90px;
+		text-align: center;
+		vertical-align: middle;
+	}
 	/*------------------------------------*\
         BLOG
     \*------------------------------------*/
@@ -525,8 +537,33 @@ background: #fff;
 @media only screen and (min-width:480px) {
 
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:768px) and (max-width: 1280px) {
 
+	.container{
+		height: 300px;
+	}
+	#slogan1{
+		font-size: 25px;
+		margin: 98px;
+	}
+	#slogan2 {
+		font-size: 21px;
+		margin: -92px;
+	}
+	#img_sportif{
+		background-repeat: no-repeat;
+		background-size: 40%;
+		width: 50%;
+		float:left;
+	}
+	#img_sportif2{
+		background-repeat: no-repeat;
+		background-size: 40%;
+	}
+	#coaching_sportif{
+		width: 50%;
+		display: inline-block;
+	}
 }
 @media only screen and (min-width:1024px) {
 

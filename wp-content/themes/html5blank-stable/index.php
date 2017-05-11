@@ -20,34 +20,39 @@
 </div>
 
 <div class="partie_sportif">
-	<div class="col-md-6" id="img_sportif"></div>
-	<div class="col-md-6" id="coaching_sportif">
-		<h1 id="partie_sport">Coaching Sportif</h1>
-		<p id="partie_sport">
-			Martinus agens illas provincias pro praefectis aerumnas innocentium graviter gemens saepeque obsecrans
-			ut ab omni culpa inmunibus parceretur, cum non inpetraret, minabatur se discessurum: ut saltem id metuens
-			perquisitor malivolus tandem desineret quieti coalitos homines in aperta pericula proiectare.
-		</p>
-
+	<div class="row">
+		<div class="col-lg-6 col-md-6" id="img_sportif"></div>
+		<div class="col-lg-6 col-md-6" id="coaching_sportif">
+			<h1 id="partie_sport">Coaching Sportif</h1>
+			<p id="partie_sport">
+				Martinus agens illas provincias pro praefectis aerumnas innocentium graviter gemens saepeque obsecrans
+				ut ab omni culpa inmunibus parceretur, cum non inpetraret, minabatur se discessurum: ut saltem id metuens
+				perquisitor malivolus tandem desineret quieti coalitos homines in aperta pericula proiectare.
+			</p>
+		</div>
 	</div>
 </div>
-
-<div class="partie_sportif2">
-	<div class="col-md-6" id="img_sportif2"></div>
-	<div class="col-md-6" id="coaching_sportif2">
-		<h1 id="partie_sport2">Coaching Sportif</h1>
-		<p id="partie_sport2">
-			Martinus agens illas provincias pro praefectis aerumnas innocentium graviter gemens saepeque obsecrans
-			ut ab omni culpa inmunibus parceretur, cum non inpetraret, minabatur se discessurum: ut saltem id metuens
-			perquisitor malivolus tandem desineret quieti coalitos homines in aperta pericula proiectare.
-		</p>
+<div class="row">
+	<div class="partie_sportif2">
+		<div class="col-md-6" id="img_sportif2"></div>
+		<div class="col-md-6" id="coaching_sportif2">
+			<h1 id="partie_sport2">Coaching Sportif</h1>
+			<p id="partie_sport2">
+				Martinus agens illas provincias pro praefectis aerumnas innocentium graviter gemens saepeque obsecrans
+				ut ab omni culpa inmunibus parceretur, cum non inpetraret, minabatur se discessurum: ut saltem id metuens
+				perquisitor malivolus tandem desineret quieti coalitos homines in aperta pericula proiectare.
+			</p>
+		</div>
 	</div>
 </div>
 
 <div class="partie_cours">
-	<div class="col-md-12">
-		<h1>Blog</h1>
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Blog</h1>
+		</div>
 	</div>
+
 
 <div class="row">
 	<div class="col-md-6 col-md-offset-3" data-category="view">
