@@ -23,7 +23,7 @@
 define('DB_NAME', 'vg_site');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'jance');
 
 /** MySQL database password */
 define('DB_PASSWORD', '');
