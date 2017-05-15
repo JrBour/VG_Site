@@ -160,7 +160,7 @@ input:focus {
     width: 438px;
 }
 
-#partie_sport {
+#partie_sport{
     color: #000000;
     margin-left: 90px;
 }
@@ -169,6 +169,7 @@ input:focus {
     background-color: #091d49;
     height: 400px;
     color: white;
+    margin: 0;
 }
 
 #img_sportif2 {
@@ -179,13 +180,13 @@ input:focus {
 
 #partie_sport2 {
     color: white;
-    margin-left: 90px;
-    text-align: right;
     vertical-align: middle;
+    margin:0;
 }
 
 .partie_sportif2 p {
     text-align: right;
+    margin: 0;
 }
 
 /*------------------------------------*\
@@ -783,21 +784,40 @@ h4 {
     }
 
     .lib-panel .lib-row.lib-header {
-
         padding: 8px 10px 0px 20px;
     }
 
 }
 
-@media only screen and (min-width: 1140px) {
-
-}
-
-@media only screen and (min-width: 1280px) {
-
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+@media only screen and (min-width: 1364px) {
+    #img_sportif{
+        height: 307px;
+        width: 438px;
+        background-repeat: no-repeat;
+        background-size: 71%;
+    }
+    #img_sportif2{
+         height: 400px;
+         width: 438px;
+         background-size: 72%;
+         background-repeat: no-repeat;
+         padding: 0;
+        margin-left: 232px;
+    }
+    #coaching_sportif{
+        text-align: right;
+        margin-top: 85px;
+    }
+    #partie_sport2{
+        text-align: left;
+    }
+    #partie_sport2 p{
+        text-align: left;
+        margin-top: 5px;
+    }
+    #coaching_sportif2{
+        margin-top: 90px;
+    }
 
 }
 
