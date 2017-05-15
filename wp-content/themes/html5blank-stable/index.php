@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!--Partie 1 - SLOGAN-->
-<div class="container">
+<div class="container" id="image_slogan">
 	<div class="row">
 		<div class="col-md-12">
 			<div id="slogan">
@@ -21,8 +21,11 @@
 
 <div class="partie_sportif">
 	<div class="row">
-		<div class="col-lg-6 col-md-6" id="img_sportif"></div>
-		<div class="col-lg-6 col-md-6" id="coaching_sportif">
+		<div class="col-md-6">
+			<div id="img_sportif"></div>
+		</div>
+
+		<div class="col-md-6" id="coaching_sportif">
 			<h1 id="partie_sport">Coaching Sportif</h1>
 			<p id="partie_sport">
 				Martinus agens illas provincias pro praefectis aerumnas innocentium graviter gemens saepeque obsecrans
@@ -32,9 +35,8 @@
 		</div>
 	</div>
 </div>
-<div class="row">
-	<div class="partie_sportif2">
-		<div class="col-md-6" id="img_sportif2"></div>
+<div class="partie_sportif2">
+	<div class="row">
 		<div class="col-md-6" id="coaching_sportif2">
 			<h1 id="partie_sport2">Coaching Sportif</h1>
 			<p id="partie_sport2">
@@ -42,6 +44,8 @@
 				ut ab omni culpa inmunibus parceretur, cum non inpetraret, minabatur se discessurum: ut saltem id metuens
 				perquisitor malivolus tandem desineret quieti coalitos homines in aperta pericula proiectare.
 			</p>
+		</div>
+		<div class="col-md-6" id="img_sportif2">
 		</div>
 	</div>
 </div>
