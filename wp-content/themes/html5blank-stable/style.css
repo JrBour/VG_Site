@@ -150,7 +150,6 @@ input:focus {
 }
 .textSlogan {
     position: absolute;
-    height: 100%;
     text-align: center;
     width: 100%;
     z-index: 10;
@@ -162,103 +161,25 @@ input:focus {
     margin-right: 23%;
     opacity: 0.4;
 }
-
-
-
-
-
-
-
-.textCour {
+.container_index{
+    display: flex;
+    justify-content: center;
+}
+.contentIndex-1 {
+    position: relative;
+    background-color: #d8d8d8;
     display: inline-block;
-    font-size: 20px;
-    color: #FFF;
-    position: absolute;
-    height: 8%;
-    text-align: center;
-    width: 37%;
-    margin-left: 5%;
+    margin-bottom: -5px;
 }
-
-.index_slogan{
-    width: 100%;
-    height: 450px;
-    text-align: center;
-    vertical-align: middle;
-    margin-top: 20%;
-
+.contentIndex-2 {
+    position: relative;
+    background-color: #00163d;
+    display: inline-block;
+    margin-bottom: -4px;
 }
-#image_slogan{
-    background-image: url("../html5blank-stable/img/bodybuilding_femme.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-#slogan{
-    width: 100%;
-    height: 450px;
-    text-align: center;
-    vertical-align: middle;
-    margin-top: 20%;
-}
-
-#slogan1 {
-    font-size: 35px;
-    text-align: center;
-    color: white;
-}
-
-#slogan2 {
-    font-size: 27px;
-    text-align: center;
-    color: white;
-}
-
-.partie_cours {
-    background-color: white;
-    color: black;
-}
-
-.partie_sportif {
-    background-color: #cecec6;
-    height: 400px;
-}
-
-#img_sportif {
-    background-image: url("../html5blank-stable/img/homme_al.png");
-    height: 289px;
-    width: 438px;
-}
-
-#partie_sport{
-    color: #000000;
-    margin-left: 90px;
-}
-
-.partie_sportif2 {
-    background-color: #091d49;
-    height: 400px;
-    color: white;
-    margin: 0;
-}
-
-#img_sportif2 {
-    background-image: url("../html5blank-stable/img/planche_femme.png");
-    height: 289px;
-    width: 438px;
-}
-
-#partie_sport2 {
-    color: white;
-    vertical-align: middle;
-    margin:0;
-}
-
-.partie_sportif2 p {
-    text-align: right;
-    margin: 0;
+.title-preview-blog{
+    display: flex;
+    justify-content: center;
 }
 
 /*------------------------------------*\
@@ -326,12 +247,7 @@ input:focus {
 /*------------------------------------*\
     COURS
 \*------------------------------------*/
-.partie_cours h1 {
-    text-align: center;
-    font-size: 38px;
-    margin: 0.67em 0;
-    text-decoration: underline
-}
+
 
 .containerBox {
     position: relative;

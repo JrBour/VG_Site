@@ -16,49 +16,40 @@ Template Name: Index
     <img class="img-responsive" src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('background-titre-img')) ?>" />
 </div>
 <div class="container_index">
-	<div class="col-md-12">
-		<h1><?php the_field('titre_content'); ?></h1>
-	</div>
+		<h2><?php the_field('titre_content'); ?></h2>
 </div>
-
-
-
-
-    <div class="content_index_1">
+    <div class="contentIndex-1">
         <div class="row">
-		<div class="col-md-6">
-			<div><?php $image = wp_get_attachment_image_src(get_field('background-titre-img'), 'Miniature'); ?></div>
-            <img class="img-responsive" src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('background-titre-img')) ?>" /></div>
-		</div>
-
-		<div class="col-md-6" id="coaching_sportif">
-			<h1 id="partie_sport"><?php the_field('titre_cours_1'); ?></h1>
-			<p id="partie_sport">
-                <?php the_field('titre_cours_1'); ?>
-			</p>
-		</div>
-	</div>
+            <div class="col-md-5 col-md-offset-1">
+                <h4 ><?php the_field('titre_content_1'); ?></h4>
+                <p>
+                    <?php the_field('text_content_1'); ?>
+                </p>
+            </div>
+            <div class="col-md-5">
+                <div><?php $image = wp_get_attachment_image_src(get_field('img_content_1'), 'Miniature'); ?></div>
+                <img class="img-responsive" src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('titre_content_1')) ?>" />
+            </div>
+        </div>
+    </div>
+<div class="contentIndex-2">
+    <div class="row">
+        <div class="col-md-5">
+            <div><?php $image = wp_get_attachment_image_src(get_field('img_content_2'), 'Miniature'); ?></div>
+            <img class="img-responsive" src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('titre_content_2')) ?>" />
+        </div>
+        <div class="col-md-5 col-md-offset-1">
+            <h4 ><?php the_field('titre_content_2'); ?></h4>
+            <p>
+                <?php the_field('text_content_2'); ?>
+            </p>
+        </div>
+    </div>
 </div>
-<div class="partie_sportif2">
-	<div class="row">
-		<div class="col-md-6" id="coaching_sportif2">
-			<h1 id="partie_sport2"><?php the_field('titre_cours_1'); ?></h1>
-			<p id="partie_sport2">
-                <?php the_field('titre_cours_1'); ?>
-			</p>
-		</div>
-		<div class="col-md-6"><?php $image = wp_get_attachment_image_src(get_field('background-titre-img'), 'Miniature'); ?></div>
-        <img class="img-responsive" src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('background-titre-img')) ?>" />
-		</div>
-	</div>
+<div class="title-preview-blog">
+    <h2>Blog</h2>
 </div>
 
-<div class="partie_cours">
-	<div class="row">
-		<div class="col-md-12">
-			<h1>Blog</h1>
-		</div>
-	</div>
 
 
 <div class="row">
