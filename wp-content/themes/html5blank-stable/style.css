@@ -1,5 +1,5 @@
 /*------------------------------------*\
-    MAIN Fonction
+    MAIN
 \*------------------------------------*/
 body {
     font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -15,7 +15,7 @@ h2{
     color: #000;
 }
 p{
-
+    color: white;
 }
 img {
     max-width: 100%;

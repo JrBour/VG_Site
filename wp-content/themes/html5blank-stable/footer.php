@@ -4,8 +4,7 @@
 <div class="row flexFoot">
 	<div class="col-md-4 col-offset-1 links">
 		<h5>Liens</h5>
-		<p>Qui suis-je ?</p>
-		<p>Sitemaps</p>
+		
 	</div>
 	<div class="col-md-2 logo_footer">
 		<img src="#">
