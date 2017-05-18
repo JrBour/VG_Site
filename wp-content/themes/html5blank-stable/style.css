@@ -15,11 +15,6 @@
 MAIN
 \*------------------------------------*/
 
-/* global box-sizing */
-.col-lg-6 {
-    padding: 0;
-}
-
 *,
 *:after,
 *:before {
@@ -31,9 +26,6 @@ MAIN
 }
 
 /* html element 62.5% font-size for REM use */
-html {
-    font-size: 62.5%;
-}
 
 body {
     font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -140,10 +132,90 @@ input:focus {
         margin-left: -80px;
     }
 }
-
 /*------------------------------------*\
-    COACHING SPORTIF
+    INDEX
 \*------------------------------------*/
+
+.containerSlogan {
+    position: relative;
+    display: inline-block;
+}
+.containerSlogan h2 {
+    color: white;
+    font-size: 8em;
+}
+.containerSlogan h3 {
+    color: white;
+    font-size: 6em;
+}
+.textSlogan {
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+    margin-top: 25%;
+}
+.border_index{
+    border:1px solid white;
+    margin-left: 23%;
+    margin-right: 23%;
+    opacity: 0.4;
+}
+
+
+
+
+
+
+
+.textCour {
+    display: inline-block;
+    font-size: 20px;
+    color: #FFF;
+    position: absolute;
+    height: 8%;
+    text-align: center;
+    width: 37%;
+    margin-left: 5%;
+}
+
+.index_slogan{
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 20%;
+
+}
+#image_slogan{
+    background-image: url("../html5blank-stable/img/bodybuilding_femme.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#slogan{
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 20%;
+}
+
+#slogan1 {
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+
+#slogan2 {
+    font-size: 27px;
+    text-align: center;
+    color: white;
+}
+
 .partie_cours {
     background-color: white;
     color: black;
@@ -254,23 +326,6 @@ input:focus {
 /*------------------------------------*\
     COURS
 \*------------------------------------*/
-h2 {
-    display: inline-block;
-    font-size: 40px; /*or whatever you want*/
-    color: #FFF;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-h4 {
-    opacity: 1;
-    font-size: 1.2em;
-}
-
 .partie_cours h1 {
     text-align: center;
     font-size: 38px;
@@ -374,21 +429,6 @@ h4 {
     width: 100%;
 }
 
-.containerTarif {
-    min-height: 100%;
-    text-align: center;
-    position: relative;
-    margin: 0 auto;
-    display: inline-block;
-    overflow: hidden;
-    background-color: white;
-}
-
-.containerTarif:nth-child(2) img {
-    margin: 0;
-    display: inline-block;
-    float: right;
-}
 
 .textTarif {
     text-transform: uppercase;
@@ -413,41 +453,44 @@ h4 {
     font-size: 80%;
     color: whitesmoke;
 }
+.containerTarif{
+    display:inline-block;
+    -webkit-transition:  box-shadow 0.2s ease-out;
+    -moz-transition: box-shadow 0.2s ease-out;
+    -ms-transition: box-shadow 0.2s ease-out;
+    -o-transition: box-shadow 0.2s ease-out;
+    transition: box-shadow 0.2s ease-out;
+}
 
-/*------------------------------------*\
-    SLOGAN
-\*------------------------------------*/
+.containerTarif:hover {
+    box-shadow: inset 0 0 90px -20px #373737;
+}
 
-.container {
+.containerTarif img{
+    position: relative;z-index: -1;vertical-align:bottom;
+    -moz-transition:all 0.3s ease-in-out;
+    -webkit-transition:all 0.3s ease-in-out;
+    -ms-transition:all 0.3s ease-in-out;
+    -o-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+}
+.containerTarif:hover img {
+    -webkit-filter:grayscale(1);
+}
+.tarif_plus{
+    color: white;
+    font-size: 0.7em;
+    border: 1px solid;
+    padding: 2%;
+    border-radius: 11px;
+}
+.tarif_plus:hover{
+    text-decoration: none;
     background-color: white;
-}
-#image_slogan{
-    background-image: url("../html5blank-stable/img/bodybuilding_femme.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-#slogan{
-    width: 100%;
-    height: 450px;
-    text-align: center;
-    vertical-align: middle;
-    margin-top: 20%;
+    color: black;
+    opacity: 0.8;
 }
 
-#slogan1 {
-    font-size: 35px;
-    text-align: center;
-    color: white;
-}
-
-#slogan2 {
-    font-size: 27px;
-    text-align: center;
-    color: white;
-}
 
 /*------------------------------------*\
     FOOTER

@@ -1,36 +1,40 @@
+<?php
+/*
+Template Name: Index
+ */
+?>
 <?php get_header(); ?>
 
 <!--Partie 1 - SLOGAN-->
-<div class="container" id="image_slogan">
-	<div class="row">
-		<div class="col-md-12">
-			<div id="slogan">
-				<h1 id="slogan1">Le corps accomplit</h1>
-				<h2 id="slogan2">Ce que l'esprit croit</h2>
-			</div>
-		</div>
-
-	</div>
+<div class="containerSlogan">
+    <div class="textSlogan">
+        <h2><?php the_field('slogan_1'); ?></h2>
+        <div class="border_index"></div>
+        <h3><?php the_field('slogan_2'); ?></h3>
+    </div>
+    <?php $image = wp_get_attachment_image_src(get_field('background_image_slogan'), 'Miniature'); ?>
+    <img class="img-responsive" src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('background-titre-img')) ?>" />
 </div>
-
-<div class="partie_cours">
+<div class="container_index">
 	<div class="col-md-12">
-		<h1>Cours</h1>
+		<h1><?php the_field('titre_content'); ?></h1>
 	</div>
 </div>
 
-<div class="partie_sportif">
-	<div class="row">
+
+
+
+    <div class="content_index_1">
+        <div class="row">
 		<div class="col-md-6">
-			<div id="img_sportif"></div>
+			<div><?php $image = wp_get_attachment_image_src(get_field('background-titre-img'), 'Miniature'); ?></div>
+            <img class="img-responsive" src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('background-titre-img')) ?>" /></div>
 		</div>
 
 		<div class="col-md-6" id="coaching_sportif">
-			<h1 id="partie_sport">Coaching Sportif</h1>
+			<h1 id="partie_sport"><?php the_field('titre_cours_1'); ?></h1>
 			<p id="partie_sport">
-				Martinus agens illas provincias pro praefectis aerumnas innocentium graviter gemens saepeque obsecrans
-				ut ab omni culpa inmunibus parceretur, cum non inpetraret, minabatur se discessurum: ut saltem id metuens
-				perquisitor malivolus tandem desineret quieti coalitos homines in aperta pericula proiectare.
+                <?php the_field('titre_cours_1'); ?>
 			</p>
 		</div>
 	</div>
@@ -38,14 +42,13 @@
 <div class="partie_sportif2">
 	<div class="row">
 		<div class="col-md-6" id="coaching_sportif2">
-			<h1 id="partie_sport2">Coaching Sportif</h1>
+			<h1 id="partie_sport2"><?php the_field('titre_cours_1'); ?></h1>
 			<p id="partie_sport2">
-				Martinus agens illas provincias pro praefectis aerumnas innocentium graviter gemens saepeque obsecrans
-				ut ab omni culpa inmunibus parceretur, cum non inpetraret, minabatur se discessurum: ut saltem id metuens
-				perquisitor malivolus tandem desineret quieti coalitos homines in aperta pericula proiectare.
+                <?php the_field('titre_cours_1'); ?>
 			</p>
 		</div>
-		<div class="col-md-6" id="img_sportif2">
+		<div class="col-md-6"><?php $image = wp_get_attachment_image_src(get_field('background-titre-img'), 'Miniature'); ?></div>
+        <img class="img-responsive" src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('background-titre-img')) ?>" />
 		</div>
 	</div>
 </div>

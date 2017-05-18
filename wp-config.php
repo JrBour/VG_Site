@@ -26,10 +26,10 @@ define('DB_NAME', 'vg_site');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost:8889');
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
@@ -47,7 +47,7 @@ define('DB_COLLATE', '');
  * @since 2.6.0
  */
 define('AUTH_KEY',         '9.;r#2<H?*Uy#yjeT.g&>M`P63!(ZK-_eF{-5d[EusEb~Qv[Ns}HF#786Qh;O!Ou');
-define('SECURE_AUTH_KEY',  'b5[tI3Mw-v{%|Z{;lwZE<M_K8>AP{iit*z%>MvxZ.5!Wz{L$hjspzek@Oq,wluzA');
+define('SECURE_AUTH_KEY',  'b5[tI3Mw-v{%|Z{;lwZEAP{iit*z%>MvxZ.5!Wz{L$hjspzek@Oq,wluzA');
 define('LOGGED_IN_KEY',    'LP-8RzPJG.F{7aF_~u!ZB:fTi73_(JH4T_V[^im6UkQ+J6<RXWLRQa0!NKQ/:H[;');
 define('NONCE_KEY',        'i?YAC&8?#6X0a]?Pv6V*>v=[~?4)@sEk.F` tAo$@e[9ZK@VLId 4V^pehwKA-(_');
 define('AUTH_SALT',        '7z~9sYydk=c!mtM2C<vn5z^*kHj@u=X&-)wy(-><~>@@2I8l5kF-G~JEP{pmt::t');
