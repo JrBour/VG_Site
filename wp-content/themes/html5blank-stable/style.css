@@ -1,32 +1,6 @@
-/*
-	Theme Name: HTML5 Blank
-	Theme URI: http://html5blank.com
-	Description: HTML5 Blank WordPress Theme
-	Version: 1.4.3
-	Author: Todd Motto (@toddmotto)
-	Author URI: http://toddmotto.com
-	Tags: Blank, HTML5, CSS3
-
-	License: MIT
-	License URI: http://opensource.org/licenses/mit-license.php
-*/
-
 /*------------------------------------*\
-MAIN
+    MAIN
 \*------------------------------------*/
-
-*,
-*:after,
-*:before {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-}
-
-/* html element 62.5% font-size for REM use */
-
 body {
     font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #444;
@@ -34,45 +8,33 @@ body {
     margin: 0;
     padding: 0;
 }
-
-/* clear */
-.clear:before,
-.clear:after {
-    content: ' ';
-    display: table;
+h1{
+    
 }
-
-.clear:after {
-    clear: both;
+h2{
+    color: #000;
 }
-
-.clear {
-    *zoom: 1;
+p{
+    color: white;
 }
-
 img {
     max-width: 100%;
     vertical-align: bottom;
 }
-
 a {
     color: #444;
     text-decoration: none;
 }
-
 a:hover {
     color: #444;
 }
-
 a:focus {
     outline: 0;
 }
-
 a:hover,
 a:active {
     outline: 0;
 }
-
 input:focus {
     outline: 0;
     border: 1px solid #04A4CC;
@@ -88,34 +50,6 @@ input:focus {
     position: relative;
 }
 
-/* header */
-.header {
-
-}
-
-/* logo */
-.logo {
-
-}
-
-.logo-img {
-
-}
-
-/* nav */
-.nav {
-
-}
-
-/* sidebar */
-.sidebar {
-
-}
-
-/* footer */
-.footer {
-    background-color: #4c4c4d;
-}
 
 @media screen and (min-width: 768px) {
     .navbar-brand-centered {
@@ -150,7 +84,6 @@ input:focus {
 }
 .textSlogan {
     position: absolute;
-    height: 100%;
     text-align: center;
     width: 100%;
     z-index: 10;
@@ -162,108 +95,31 @@ input:focus {
     margin-right: 23%;
     opacity: 0.4;
 }
-
-
-
-
-
-
-
-.textCour {
+.container_index{
+    display: flex;
+    justify-content: center;
+}
+.contentIndex-1 {
+    position: relative;
+    background-color: #d8d8d8;
     display: inline-block;
-    font-size: 20px;
-    color: #FFF;
-    position: absolute;
-    height: 8%;
-    text-align: center;
-    width: 37%;
-    margin-left: 5%;
+    margin-bottom: -5px;
 }
-
-.index_slogan{
-    width: 100%;
-    height: 450px;
-    text-align: center;
-    vertical-align: middle;
-    margin-top: 20%;
-
+.contentIndex-2 {
+    position: relative;
+    background-color: #00163d;
+    display: inline-block;
+    margin-bottom: -4px;
 }
-#image_slogan{
-    background-image: url("../html5blank-stable/img/bodybuilding_femme.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-#slogan{
-    width: 100%;
-    height: 450px;
-    text-align: center;
-    vertical-align: middle;
-    margin-top: 20%;
-}
-
-#slogan1 {
-    font-size: 35px;
-    text-align: center;
-    color: white;
-}
-
-#slogan2 {
-    font-size: 27px;
-    text-align: center;
-    color: white;
-}
-
-.partie_cours {
-    background-color: white;
-    color: black;
-}
-
-.partie_sportif {
-    background-color: #cecec6;
-    height: 400px;
-}
-
-#img_sportif {
-    background-image: url("../html5blank-stable/img/homme_al.png");
-    height: 289px;
-    width: 438px;
-}
-
-#partie_sport{
-    color: #000000;
-    margin-left: 90px;
-}
-
-.partie_sportif2 {
-    background-color: #091d49;
-    height: 400px;
-    color: white;
-    margin: 0;
-}
-
-#img_sportif2 {
-    background-image: url("../html5blank-stable/img/planche_femme.png");
-    height: 289px;
-    width: 438px;
-}
-
-#partie_sport2 {
-    color: white;
-    vertical-align: middle;
-    margin:0;
-}
-
-.partie_sportif2 p {
-    text-align: right;
-    margin: 0;
+.title-preview-blog{
+    display: flex;
+    justify-content: center;
 }
 
 /*------------------------------------*\
     BLOG
 \*------------------------------------*/
+
 .lib-panel {
     margin-bottom: 20Px;
 }
@@ -326,12 +182,6 @@ input:focus {
 /*------------------------------------*\
     COURS
 \*------------------------------------*/
-.partie_cours h1 {
-    text-align: center;
-    font-size: 38px;
-    margin: 0.67em 0;
-    text-decoration: underline
-}
 
 .containerBox {
     position: relative;
@@ -414,6 +264,7 @@ input:focus {
 /*------------------------------------*\
     TARIF
 \*------------------------------------*/
+
 .Tarif_flex {
     display: flex;
     justify-content: center;
@@ -457,7 +308,6 @@ input:focus {
     display:inline-block;
     -webkit-transition:  box-shadow 0.2s ease-out;
     -moz-transition: box-shadow 0.2s ease-out;
-    -ms-transition: box-shadow 0.2s ease-out;
     -o-transition: box-shadow 0.2s ease-out;
     transition: box-shadow 0.2s ease-out;
 }
@@ -470,7 +320,6 @@ input:focus {
     position: relative;z-index: -1;vertical-align:bottom;
     -moz-transition:all 0.3s ease-in-out;
     -webkit-transition:all 0.3s ease-in-out;
-    -ms-transition:all 0.3s ease-in-out;
     -o-transition:all 0.3s ease-in-out;
     transition:all 0.3s ease-in-out;
 }
@@ -491,258 +340,95 @@ input:focus {
     opacity: 0.8;
 }
 
-
 /*------------------------------------*\
     FOOTER
 \*------------------------------------*/
-.copyright {
-    color: white;
-    text-align: center;
+footer{
+    background-color: #292929;
+    color:white;
 }
-
-#liens_footer {
-    color: white;
-    margin-left: 140px;
-    margin-top: 25px;
+.flexFoot{
+    display: flex;
+    justify-content: space-between;
 }
+.links {
+    margin-top: 50px;
+}
+.logo_footer{
 
-#social {
-    margin: 20px 10px;
-    text-align: center;
+}
+.contact_footer {
+    color: white;
+    text-align: right;
+    margin-top: 50px;
+}
+.flexRS{
+    display: flex;
+    justify-content: center;
 }
 
 .smGlobalBtn { /* global button class */
-    display: inline-block;
-    position: relative;
     cursor: pointer;
     width: 50px;
     height: 50px;
     box-shadow: 0 2px 2px #999;
-    padding: 0px;
     text-decoration: none;
     text-align: center;
     color: #fff;
     font-size: 25px;
-    font-weight: normal;
     line-height: 2em;
     border-radius: 25px;
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
 }
-
 /* facebook button class*/
 .facebookBtn {
     background: #4060A5;
 }
-
 .facebookBtn:before { /* use :before to add the relevant icons */
     font-family: "FontAwesome";
     content: "\f09a"; /* add facebook icon */
 }
-
 .facebookBtn:hover {
     color: #4060A5;
     background: #fff;
 }
-
 /* twitter button class*/
 .twitterBtn {
     background: #00ABE3;
 }
-
 .twitterBtn:before {
     font-family: "FontAwesome";
     content: "\f099"; /* add twitter icon */
 }
-
 .twitterBtn:hover {
     color: #00ABE3;
     background: #fff;
 }
-
 /* google plus button class*/
 .instaBtn {
     background: #e64522;
 }
-
 .instaBtn:before {
     font-family: "FontAwesome";
     content: "\f16d"; /* add googleplus icon */
 }
-
 .instaBtn:hover {
     color: #e64522;
     background: #fff;
 }
 
-#contact_footer {
+.copyright {
+    margin-top:3%;
     color: white;
-    text-align: right;
+    text-align: center;
 }
-
-/*------------------------------------*\
-	TYPOGRAPHY
-\*------------------------------------*/
 
 /*------------------------------------*\
     RESPONSIVE
 \*------------------------------------*/
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
-
-    /*------------------------------------*\
-        SLOGAN
-    \*------------------------------------*/
-    #slogan1 {
-        font-size: 16px;
-        margin: 53px;
-    }
-
-    #slogan2 {
-        font-size: 13px;
-        margin: -47px;
-    }
-
-    #slogan {
-        height: 152px;
-    }
-
-    /*------------------------------------*\
-        COACHING SPORTIF
-    \*------------------------------------*/
-    .partie_sportif {
-        height: 400px;
-    }
-
-    /*COURS*/
-    .partie_cours h1 {
-        text-align: center;
-        font-size: 26px;
-    }
-
-    .partie_sportif {
-        height: 400px;
-    }
-
-    #img_sportif {
-        background-repeat: no-repeat;
-        background-size: 61%;
-        height: 206px;
-        width: 289px;
-        margin-left: 31%;
-    }
-
-    #coaching_sportif {
-        text-align: center;
-        margin-left: -80px;
-        height: 300px;
-    }
-
-    /*------------------------------------*\
-        COACHING SPORTIF 2
-    \*------------------------------------*/
-    .partie_sportif2 {
-        height: 400px;
-    }
-
-    #img_sportif2 {
-        height: 89px;
-        width: 200px;
-    }
-
-    /*COURS*/
-    .partie_cours h1 {
-        text-align: center;
-        font-size: 26px;
-    }
-
-    .partie_sportif2 {
-        height: 400px;
-    }
-
-    #img_sportif {
-        background-repeat: no-repeat;
-        background-size: 40%;
-    }
-
-    #img_sportif2 {
-        background-repeat: no-repeat;
-        background-size: 61%;
-        height: 206px;
-        width: 289px;
-    }
-
-    #coaching_sportif2 {
-        text-align: center;
-        margin-left: -80px;
-        height: 300px;
-    }
-
-    #partie_sport2 {
-        margin-left: 90px;
-        text-align: center;
-        vertical-align: middle;
-    }
-
-    /*------------------------------------*\
-        BLOG
-    \*------------------------------------*/
-    .lib-panel {
-        margin-bottom: 10Px;
-    }
-
-    .lib-panel img {
-        width: 100%;
-        background-color: transparent;
-    }
-
-    .lib-panel .lib-row {
-        padding: 0 20px 0 20px;
-    }
-
-    .lib-panel .lib-row.lib-header {
-        background-color: #FFFFFF;
-        font-size: 14px;
-    }
-
-    .lib-panel .lib-row.lib-header .lib-header-seperator {
-        height: 2px;
-        width: 16px;
-        margin: 7px 0 7px 0;
-    }
-
-    .lib-panel .lib-row.lib-desc {
-        position: relative;
-        height: 100%;
-        display: block;
-        font-size: 14px;
-    }
-
-    .lib-panel .lib-row.lib-desc a {
-        bottom: 10px;
-        left: 20px;
-    }
-
-    .row-margin-bottom {
-        margin-bottom: 20px;
-    }
-
-    /*------------------------*\
-        FOOTER
-    \*------------------------*/
-    #liens_footer {
-        text-align: left;
-    }
-
-    #logo_footer {
-        margin-left: 43%;
-    }
-
-    #contact_footer {
-        text-align: left;
-        margin-left: 140px;
-        margin-top: 25px;
-    }
 
 }
 
@@ -752,117 +438,12 @@ input:focus {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-    .container {
-        height: 300px;
-    }
-    #slogan{
-        margin-top: 15%;
-    }
-
-    #slogan1 {
-        font-size: 25px;
-    }
-
-    #slogan2 {
-        font-size: 21px;
-    }
-
-    #img_sportif {
-        background-repeat: no-repeat;
-        background-size: 88%;
-        width: 59%;
-        margin: 0;
-        float: left;
-        height: 400px;
-    }
-
-    #img_sportif2 {
-        background-repeat: no-repeat;
-        background-size: 97%;
-        width: 40%;
-        margin: 0;
-        float: right;
-        height: 400px;
-        width: 41%;
-    }
-
-    #coaching_sportif {
-        width: 50%;
-        display: inline-block;
-        margin-top: 64px;
-        text-align: right;
-    }
-
-    #coaching_sportif2{
-        width: 50%;
-        display: inline-block;
-        margin-top: 64px;
-        text-align: left;
-    }
-    #partie_sport2{
-        text-align: left;
-    }
-
-    /*FOOTER*/
-    #contact_footer{
-        margin-top: 25px;
-        text-align: center;
-        margin: auto;
-    }
-    #liens_footer{
-        text-align: center;
-        margin: auto;
-    }
-    /*------------------------------------*\
-    BLOG
-\*------------------------------------*/
-    .lib-panel {
-        margin-bottom: 20Px;
-    }
-
-    .lib-panel img {
-        width: 50%;
-        background-color: transparent;
-        margin-left: 25%;
-    }
-
-    .lib-panel .lib-row.lib-header {
-        padding: 8px 10px 0px 20px;
-    }
-
 }
 
 @media only screen and (min-width: 1364px) {
-    #img_sportif{
-        height: 307px;
-        width: 438px;
-        background-repeat: no-repeat;
-        background-size: 71%;
-    }
-    #img_sportif2{
-         height: 400px;
-         width: 438px;
-         background-size: 72%;
-         background-repeat: no-repeat;
-         padding: 0;
-        margin-left: 232px;
-    }
-    #coaching_sportif{
-        text-align: right;
-        margin-top: 85px;
-    }
-    #partie_sport2{
-        text-align: left;
-    }
-    #partie_sport2 p{
-        text-align: left;
-        margin-top: 5px;
-    }
-    #coaching_sportif2{
-        margin-top: 90px;
-    }
 
 }
+
 
 /*------------------------------------*\
     MISC
@@ -1103,3 +684,4 @@ SINGLE BLOG
     height: 50vh;
     overflow: hidden;
 }
+
