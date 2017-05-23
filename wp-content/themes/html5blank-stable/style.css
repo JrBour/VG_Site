@@ -1033,3 +1033,6 @@ a img.aligncenter {
         page-break-after: avoid;
     }
 }
+.row {
+    min-height: 10vh;
+}
