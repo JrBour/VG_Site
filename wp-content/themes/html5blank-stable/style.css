@@ -549,7 +549,124 @@ a img.aligncenter {
 .bypostauthor {
 
 }
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+}
+.navbar-toggle {
+    z-index:3;
+}
+.text-title{
+position: absolute;
+    color: #fff;	
+}
 
+.nav {
+
+}
+.navbar {
+    position: relative;
+    min-height: 76px;
+    background-color: #fff;
+    /* margin-bottom: 20px; */
+    border: 1px solid transparent;
+}
+@media screen and (min-width: 768px){
+.navbar-brand-centered {
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 131px;
+    border-radius: 89px;
+    text-align: center;
+    background-color: #376BAB !important;
+}
+.navbar-brand {
+    float: left;
+    height: 124px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+}
+/*presentation*/
+.text-title{
+font-size: 3vw;
+margin-left: 31%;
+    margin-top: 207px;
+}
+.section1{
+	height: 400px;
+	width: 100%
+}
+.section2{
+	height: 418px;
+	width: 100%;
+background-color: #eee;
+}
+.section3{
+	height: 400px;
+	width: 100%;
+
+}
+.section4{
+	height: 500px;
+	width: 100%;
+
+}
+
+.paragraphe-prez{
+    width: 82%;
+        margin: auto;
+        
+    font-size: 17px;
+        color: #555;
+}
+.h2-prez{
+	color: #636363;
+	    margin-left: 40%;
+	        padding: 48px;
+}
+.textures{
+	position: absolute;
+	height: 500px;
+	width: 100%;
+}
+.about{
+	    font-size: 3vw;
+}
+.petit-p{
+	    width: 60%;
+    font-size: 17px;
+}
+.icon-section{
+	        margin-top: 118px;
+    width: 90%;
+    margin-left: 5%;
+}
+.p-icon{
+	    font-size: 17px;
+    text-align: center;
+}
+.last{
+        color: #555;
+    font-size: 17px;
+    width: 80%;
+    margin: auto;
+}
+/*fb*/
+.social_text{
+    width: 100%;
+}
+.comments_face{
+    width: 100%;
+    margin: auto;
+    
+}
 /*------------------------------------*\
     PRINT
 \*------------------------------------*/
