@@ -20,7 +20,7 @@ final class WP_Theme implements ArrayAccess {
 	public $update = false;
 
 	/**
-	 * Headers for style.css files.
+	 * Headers for styles.css files.
 	 *
 	 * @static
 	 * @access private
@@ -81,7 +81,7 @@ final class WP_Theme implements ArrayAccess {
 	private $theme_root;
 
 	/**
-	 * Header data from the theme's style.css file.
+	 * Header data from the theme's styles.css file.
 	 *
 	 * @access private
 	 * @var array
@@ -89,7 +89,7 @@ final class WP_Theme implements ArrayAccess {
 	private $headers = array();
 
 	/**
-	 * Header data from the theme's style.css file after being sanitized.
+	 * Header data from the theme's styles.css file after being sanitized.
 	 *
 	 * @access private
 	 * @var array
@@ -97,7 +97,7 @@ final class WP_Theme implements ArrayAccess {
 	private $headers_sanitized;
 
 	/**
-	 * Header name from the theme's style.css after being translated.
+	 * Header name from the theme's styles.css after being translated.
 	 *
 	 * Cached due to sorting functions running over the translated name.
 	 *
@@ -225,7 +225,7 @@ final class WP_Theme implements ArrayAccess {
 		}
 
 		$this->cache_hash = md5( $this->theme_root . '/' . $this->stylesheet );
-		$theme_file = $this->stylesheet . '/style.css';
+		$theme_file = $this->stylesheet . '/styles.css';
 
 		$cache = $this->cache_get( 'theme' );
 
@@ -270,11 +270,11 @@ final class WP_Theme implements ArrayAccess {
 			$this->template = $this->stylesheet;
 			if ( ! file_exists( $this->theme_root . '/' . $this->stylesheet . '/index.php' ) ) {
 				$error_message = sprintf(
-					/* translators: 1: index.php, 2: Codex URL, 3: style.css */
+					/* translators: 1: index.php, 2: Codex URL, 3: styles.css */
 					__( 'Template is missing. Standalone themes need to have a %1$s template file. <a href="%2$s">Child themes</a> need to have a Template header in the %3$s stylesheet.' ),
 					'<code>index.php</code>',
 					__( 'https://codex.wordpress.org/Child_Themes' ),
-					'<code>style.css</code>'
+					'<code>styles.css</code>'
 				);
 				$this->errors = new WP_Error( 'theme_no_index', $error_message );
 				$this->cache_add( 'theme', array( 'headers' => $this->headers, 'errors' => $this->errors, 'stylesheet' => $this->stylesheet, 'template' => $this->template ) );
@@ -582,7 +582,7 @@ final class WP_Theme implements ArrayAccess {
 	 * To get a theme header for display, use the display() method.
 	 *
 	 * Use the get_template() method, not the 'Template' header, for finding the template.
-	 * The 'Template' header is only good for what was written in the style.css, while
+	 * The 'Template' header is only good for what was written in the styles.css, while
 	 * get_template() takes into account where WordPress actually located the theme and
 	 * whether it is actually valid.
 	 *

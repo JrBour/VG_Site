@@ -15,6 +15,12 @@
 MAIN
 \*------------------------------------*/
 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700');
+
+
+.row {
+    margin: 0;
+}
 *,
 *:after,
 *:before {
@@ -137,8 +143,14 @@ input:focus {
 \*------------------------------------*/
 
 .containerSlogan {
-    position: relative;
-    display: inline-block;
+    margin: 0;
+    padding-top: 30vh;
+    width: 100%;
+    height: 100vh;
+    background: url("img/bc53a78342bfe9b6ce0cc81a02766930.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .containerSlogan h2 {
     color: white;
@@ -149,35 +161,23 @@ input:focus {
     font-size: 6em;
 }
 .textSlogan {
-    position: absolute;
-    height: 100%;
     text-align: center;
     width: 100%;
     z-index: 10;
-    margin-top: 25%;
 }
-.border_index{
-    border:1px solid white;
+.textSlogan h2 {
+    font-family: 'Roboto Condensed';
+    font-weight:700;
+}
+.textSlogan h3 {
+    font-family:'Roboto Condensed';
+    font-weight: 100;
+}
+.border_index {
+    border: 1px solid white;
     margin-left: 23%;
     margin-right: 23%;
     opacity: 0.4;
-}
-
-
-
-
-
-
-
-.textCour {
-    display: inline-block;
-    font-size: 20px;
-    color: #FFF;
-    position: absolute;
-    height: 8%;
-    text-align: center;
-    width: 37%;
-    margin-left: 5%;
 }
 
 .index_slogan{
@@ -214,53 +214,212 @@ input:focus {
     font-size: 27px;
     text-align: center;
     color: white;
+
 }
 
-.partie_cours {
-    background-color: white;
-    color: black;
+.first_cours{
+    background-color: #d8d8d8;
 }
-
-.partie_sportif {
-    background-color: #cecec6;
-    height: 400px;
-}
-
-#img_sportif {
-    background-image: url("../html5blank-stable/img/homme_al.png");
-    height: 289px;
-    width: 438px;
-}
-
-#partie_sport{
-    color: #000000;
-    margin-left: 90px;
-}
-
-.partie_sportif2 {
-    background-color: #091d49;
-    height: 400px;
+.second_cours {
+    background-color: #00163D;
+    height: 500px;
     color: white;
     margin: 0;
+    text-align: left;
 }
 
-#img_sportif2 {
-    background-image: url("../html5blank-stable/img/planche_femme.png");
-    height: 289px;
-    width: 438px;
-}
-
-#partie_sport2 {
-    color: white;
-    vertical-align: middle;
-    margin:0;
-}
-
-.partie_sportif2 p {
+.second_cours p, .second_cours h3 {
+    margin-top: 20px;
     text-align: right;
-    margin: 0;
+}
+.coaching_sportif{
+    margin-top: 150px;
+}
+.coaching_sportif2{
+    margin-top: 150px;
+}
+.second_cours h3, .first_cours h3 {
+    font-size: 4em;
+}
+.second_cours p, .first_cours p {
+    font-size: 2em;
+}
+.coaching_sportif h3:after{
+    content:"";
+    position: absolute;
+    height: 2px;
+    background: black;
+    width: 400px;
+    left: -20px;
+    top: 75px;
+}
+.coaching_sportif2 h3:after {
+    content:"";
+    position: absolute;
+    height: 2px;
+    background: white;
+    width: 400px;
+    right: -14px;
+    top: 75px;
+}
+.first_back{
+    background: url("img/planche_femme.png");
+    background-size: 70%;
+    background-repeat:no-repeat;
+    background-position: right;
+    height: 500px;
+}
+.second_back{
+    background: url("img/planche_femme.png");
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: right;
+    height: 500px;
+}
+.container_index{
+    height: 70px;
+}
+.title_index {
+    font-size: 5em;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 100;
+}
+@media only screen and (max-width:768px){
+    .coaching_sportif2 h3:after {
+        display: none;
+    }
+    .coaching_sportif h3:after{
+        display: none;
+    }
+    .second_cours {
+        background-color: #00163D;
+        height: auto;
+        color: white;
+        margin: 0;
+        text-align: left;
+    }
+    .second_cours .coaching_sportif2 {
+        margin-top: 30px;
+        padding-bottom: 50px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .coaching_sportif2 h3:after {
+        display: none;
+    }
+    .coaching_sportif h3:after{
+        display: none;
+    }
+    .coaching_sportif2 h3:after {
+        content:"";
+        position: absolute;
+        display: none;
+    }
+    .container {
+        height: 300px;
+    }
+    #slogan{
+        margin-top: 15%;
+    }
+
+    #slogan1 {
+        font-size: 25px;
+    }
+
+    #slogan2 {
+        font-size: 21px;
+    }
+
+    #img_sportif {
+        background-repeat: no-repeat;
+        background-size: 88%;
+        width: 59%;
+        margin: 0;
+        float: left;
+        height: 400px;
+    }
+
+    #img_sportif2 {
+        background-repeat: no-repeat;
+        background-size: 97%;
+        width: 40%;
+        margin: 0;
+        float: right;
+        height: 400px;
+        width: 41%;
+    }
+
+    #coaching_sportif {
+        width: 50%;
+        display: inline-block;
+        margin-top: 64px;
+        text-align: right;
+    }
+
+    #coaching_sportif2{
+        width: 50%;
+        display: inline-block;
+        margin-top: 64px;
+        text-align: left;
+    }
+    #partie_sport2{
+        text-align: left;
+    }
+
+    /*FOOTER*/
+    #contact_footer{
+        margin-top: 25px;
+        text-align: center;
+        margin: auto;
+    }
+    #liens_footer{
+        text-align: center;
+        margin: auto;
+    }
+    /*------------------------------------*\
+    BLOG
+\*------------------------------------*/
+    .lib-panel {
+        margin-bottom: 20Px;
+    }
+
+    .lib-panel img {
+        width: 50%;
+        background-color: transparent;
+        margin-left: 25%;
+    }
+
+    .lib-panel .lib-row.lib-header {
+        padding: 8px 10px 0px 20px;
+    }
+
 }
 
+@media only screen and (min-width: 1364px) {
+    #img_sportif{
+        height: 307px;
+        width: 438px;
+        background-repeat: no-repeat;
+        background-size: 71%;
+    }
+    #img_sportif2{
+        height: 400px;
+        width: 438px;
+        background-size: 72%;
+        background-repeat: no-repeat;
+        padding: 0;
+        margin-left: 232px;
+    }
+    #coaching_sportif{
+        text-align: right;
+        margin-top: 85px;
+    }
+
+
+}
 /*------------------------------------*\
     BLOG
 \*------------------------------------*/
@@ -332,15 +491,19 @@ input:focus {
     margin: 0.67em 0;
     text-decoration: underline
 }
-
-.containerBox {
-    position: relative;
-    display: inline-block;
-    margin-bottom: -4px;
+.TRX {
+    height: 500px;
+    background: url('img/TRX.jpg');
+    background-size: cover;
+    background-position: center;
 }
+.crossfit{
+    background: url('img/crossfit-image.png');
+    height: 400px;
+    background-size: cover;
 
+}
 .text-box {
-    position: absolute;
     height: 100%;
     text-align: center;
     width: 100%;
@@ -354,27 +517,42 @@ input:focus {
 }
 
 .textCour {
-    display: inline-block;
-    font-size: 20px;
     color: #FFF;
     position: absolute;
-    height: 8%;
     text-align: center;
     width: 37%;
     margin-left: 5%;
 }
 
-.textCour:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
-
 .background {
+    margin-top: 40px;
     position: relative;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
     padding: 2%;
+}
+.background p {
+    font-size: 1.5em;
+    text-align: left;
+}
+.background h4 {
+    font-size: 5em;
+    text-align: left;
+}
+.background2 {
+    margin-top: 40px;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+    padding: 2%;
+}
+.background2 h4{
+    text-align: right;
+}
+
+.background2 p {
+    font-size: 1.5em;
+}
+.background2 h4 {
+    font-size: 5em;
 }
 
 .gradien {
@@ -386,10 +564,8 @@ input:focus {
 }
 
 .text2Cour {
-    display: inline-block;
-    font-size: 20px;
-    color: #FFF;
     position: absolute;
+    color: #FFF;
     height: 8%;
     text-align: center;
     width: 37%;
@@ -414,29 +590,31 @@ input:focus {
 /*------------------------------------*\
     TARIF
 \*------------------------------------*/
-.Tarif_flex {
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
-    margin-bottom: 3%;
+.header_tarif{
+    background: url('img/bodybuilding_femme.jpg');
+    height: 300px;
+    margin-bottom: 100px;
+}
+h1{
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Roboto';
+    font-weight: 100;
+    color: black;
 }
 
 .offre_flex {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
+    margin: 50px auto;
     text-align: center;
     width: 100%;
+    height: 400px;
 }
-
-
 .textTarif {
     text-transform: uppercase;
     color: white;
     font-weight: lighter;
     font-size: 20px;
     letter-spacing: .1em;
-    position: absolute;
     display: block;
     top: 20%;
     left: 0;
@@ -453,45 +631,50 @@ input:focus {
     font-size: 80%;
     color: whitesmoke;
 }
-.containerTarif{
-    display:inline-block;
-    -webkit-transition:  box-shadow 0.2s ease-out;
-    -moz-transition: box-shadow 0.2s ease-out;
-    -ms-transition: box-shadow 0.2s ease-out;
-    -o-transition: box-shadow 0.2s ease-out;
-    transition: box-shadow 0.2s ease-out;
-}
-
-.containerTarif:hover {
-    box-shadow: inset 0 0 90px -20px #373737;
-}
-
-.containerTarif img{
-    position: relative;z-index: -1;vertical-align:bottom;
-    -moz-transition:all 0.3s ease-in-out;
-    -webkit-transition:all 0.3s ease-in-out;
-    -ms-transition:all 0.3s ease-in-out;
-    -o-transition:all 0.3s ease-in-out;
-    transition:all 0.3s ease-in-out;
-}
-.containerTarif:hover img {
-    -webkit-filter:grayscale(1);
-}
-.tarif_plus{
-    color: white;
-    font-size: 0.7em;
-    border: 1px solid;
-    padding: 2%;
-    border-radius: 11px;
-}
-.tarif_plus:hover{
-    text-decoration: none;
-    background-color: white;
-    color: black;
-    opacity: 0.8;
+.containerTarif {
+    display: inline-block;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: calc(25% - 30px);
+    margin-left: 15px;
+    -webkit-transition: all 5s linear;
+    -moz-transition: all 5s linear;
+    -ms-transition: all 5s linear;
+    -o-transition: all 5s linear;
+    transition: all 5s linear;
 }
 
 
+.container_tarif h3 {
+    text-align: center;
+    font-size: 3em;
+}
+.offre1{
+    background: url("img/bodybuilding_femme.jpg");
+
+}
+.offre2{
+    background: url("img/offre2.jpg");
+
+}
+.offre3 {
+    background: url('img/d365338f38a195182f021cf45a5b6ff8.jpg');
+
+}
+.offre4{
+    background: url('img/homme_al.png');
+    margin-right: 15px;
+
+}
+.text_tarif_titre{
+    padding-top: 20px;
+}
+.text_tarif_content{
+    font-size: 4em;
+    text-align: center;
+    padding-top: 60px;
+}
 /*------------------------------------*\
     FOOTER
 \*------------------------------------*/
@@ -580,6 +763,7 @@ input:focus {
     text-align: right;
 }
 
+
 /*------------------------------------*\
 	TYPOGRAPHY
 \*------------------------------------*/
@@ -615,6 +799,7 @@ input:focus {
     }
 
     /*COURS*/
+
     .partie_cours h1 {
         text-align: center;
         font-size: 26px;
@@ -635,8 +820,8 @@ input:focus {
     #coaching_sportif {
         text-align: center;
         margin-left: -80px;
-        height: 300px;
     }
+
 
     /*------------------------------------*\
         COACHING SPORTIF 2
@@ -750,119 +935,6 @@ input:focus {
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-    .container {
-        height: 300px;
-    }
-    #slogan{
-        margin-top: 15%;
-    }
-
-    #slogan1 {
-        font-size: 25px;
-    }
-
-    #slogan2 {
-        font-size: 21px;
-    }
-
-    #img_sportif {
-        background-repeat: no-repeat;
-        background-size: 88%;
-        width: 59%;
-        margin: 0;
-        float: left;
-        height: 400px;
-    }
-
-    #img_sportif2 {
-        background-repeat: no-repeat;
-        background-size: 97%;
-        width: 40%;
-        margin: 0;
-        float: right;
-        height: 400px;
-        width: 41%;
-    }
-
-    #coaching_sportif {
-        width: 50%;
-        display: inline-block;
-        margin-top: 64px;
-        text-align: right;
-    }
-
-    #coaching_sportif2{
-        width: 50%;
-        display: inline-block;
-        margin-top: 64px;
-        text-align: left;
-    }
-    #partie_sport2{
-        text-align: left;
-    }
-
-    /*FOOTER*/
-    #contact_footer{
-        margin-top: 25px;
-        text-align: center;
-        margin: auto;
-    }
-    #liens_footer{
-        text-align: center;
-        margin: auto;
-    }
-    /*------------------------------------*\
-    BLOG
-\*------------------------------------*/
-    .lib-panel {
-        margin-bottom: 20Px;
-    }
-
-    .lib-panel img {
-        width: 50%;
-        background-color: transparent;
-        margin-left: 25%;
-    }
-
-    .lib-panel .lib-row.lib-header {
-        padding: 8px 10px 0px 20px;
-    }
-
-}
-
-@media only screen and (min-width: 1364px) {
-    #img_sportif{
-        height: 307px;
-        width: 438px;
-        background-repeat: no-repeat;
-        background-size: 71%;
-    }
-    #img_sportif2{
-         height: 400px;
-         width: 438px;
-         background-size: 72%;
-         background-repeat: no-repeat;
-         padding: 0;
-        margin-left: 232px;
-    }
-    #coaching_sportif{
-        text-align: right;
-        margin-top: 85px;
-    }
-    #partie_sport2{
-        text-align: left;
-    }
-    #partie_sport2 p{
-        text-align: left;
-        margin-top: 5px;
-    }
-    #coaching_sportif2{
-        margin-top: 90px;
-    }
-
-}
 
 /*------------------------------------*\
     MISC
@@ -1033,6 +1105,7 @@ a img.aligncenter {
         page-break-after: avoid;
     }
 }
-.row {
-    min-height: 10vh;
+.container-fluid {
+    margin: 0;
+    padding: 0;
 }

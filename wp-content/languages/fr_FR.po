@@ -2571,7 +2571,7 @@ msgstr "<strong>ERREUR</strong> : votre commentaire est trop long."
 msgid "Logo"
 msgstr "Logo"
 
-#. translators: 1: index.php, 2: Codex URL, 3: style.css
+#. translators: 1: index.php, 2: Codex URL, 3: styles.css
 #: wp-includes/class-wp-theme.php:274
 msgid "Template is missing. Standalone themes need to have a %1$s template file. <a href=\"%2$s\">Child themes</a> need to have a Template header in the %3$s stylesheet."
 msgstr "Le modèle est introuvable. Un thème nécessite un fichier de modèle %1$s. Les <a href=\"%2$s\">Thèmes enfant</a> nécessitent un entête de modèle dans la feuille de style %3$s."

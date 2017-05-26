@@ -2547,7 +2547,7 @@ function make_site_theme_from_oldschool($theme_name, $template) {
 	 * Copy files from the old locations to the site theme.
 	 * TODO: This does not copy arbitrary include dependencies. Only the standard WP files are copied.
 	 */
-	$files = array('index.php' => 'index.php', 'wp-layout.css' => 'style.css', 'wp-comments.php' => 'comments.php', 'wp-comments-popup.php' => 'comments-popup.php');
+	$files = array('index.php' => 'index.php', 'wp-layout.css' => 'styles.css', 'wp-comments.php' => 'comments.php', 'wp-comments-popup.php' => 'comments-popup.php');
 
 	foreach ($files as $oldfile => $newfile) {
 		if ($oldfile == 'index.php')
@@ -2596,9 +2596,9 @@ function make_site_theme_from_oldschool($theme_name, $template) {
 	// Add a theme header.
 	$header = "/*\nTheme Name: $theme_name\nTheme URI: " . __get_option('siteurl') . "\nDescription: A theme automatically created by the update.\nVersion: 1.0\nAuthor: Moi\n*/\n";
 
-	$stylelines = file_get_contents("$site_dir/style.css");
+	$stylelines = file_get_contents("$site_dir/styles.css");
 	if ($stylelines) {
-		$f = fopen("$site_dir/style.css", 'w');
+		$f = fopen("$site_dir/styles.css", 'w');
 
 		fwrite($f, $header);
 		fwrite($f, $stylelines);
@@ -2624,7 +2624,7 @@ function make_site_theme_from_default($theme_name, $template) {
 	$default_dir = WP_CONTENT_DIR . '/themes/' . WP_DEFAULT_THEME;
 
 	// Copy files from the default theme to the site theme.
-	//$files = array('index.php', 'comments.php', 'comments-popup.php', 'footer.php', 'header.php', 'sidebar.php', 'style.css');
+	//$files = array('index.php', 'comments.php', 'comments-popup.php', 'footer.php', 'header.php', 'sidebar.php', 'styles.css');
 
 	$theme_dir = @ opendir($default_dir);
 	if ($theme_dir) {
@@ -2639,9 +2639,9 @@ function make_site_theme_from_default($theme_name, $template) {
 	@closedir($theme_dir);
 
 	// Rewrite the theme header.
-	$stylelines = explode("\n", implode('', file("$site_dir/style.css")));
+	$stylelines = explode("\n", implode('', file("$site_dir/styles.css")));
 	if ($stylelines) {
-		$f = fopen("$site_dir/style.css", 'w');
+		$f = fopen("$site_dir/styles.css", 'w');
 
 		foreach ($stylelines as $line) {
 			if (strpos($line, 'Theme Name:') !== false) $line = 'Theme Name: ' . $theme_name;

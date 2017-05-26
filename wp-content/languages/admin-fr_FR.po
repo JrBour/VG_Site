@@ -1314,12 +1314,12 @@ msgstr "Il manque soit le fichier %1$s, soit le fichier %2$s du pack de langue."
 msgid "The theme is missing the %s file."
 msgstr "Le thème n&rsquo;a pas de fichier %s."
 
-#. translators: %s: style.css
+#. translators: %s: styles.css
 #: wp-admin/includes/class-theme-upgrader.php:463
 msgid "The %s stylesheet doesn&#8217;t contain a valid theme header."
 msgstr "Le fichier %s ne contient pas d&rsquo;en-tête de thème valide."
 
-#. translators: %s: style.css
+#. translators: %s: styles.css
 #: wp-admin/includes/class-theme-upgrader.php:452
 msgid "The theme is missing the %s stylesheet."
 msgstr "Le thème n&rsquo;a pas de fichier %s."
