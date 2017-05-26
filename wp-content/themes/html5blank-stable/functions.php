@@ -17,11 +17,24 @@
 
 
 
-
 /*------------------------------------*\
 	Theme Support
 \*------------------------------------*/
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
 
+    register_post_type( 'blog',
+        array(
+            'labels' => array(
+                'name' => __( 'Blog' ),
+                'singular_name' => __( 'Blog' )
+            ),
+            'public' => true,
+            'supports' => array('title', 'editor', 'author', 'thumbnail')
+        )
+    );
+
+}
 if (!isset($content_width))
 {
     $content_width = 900;
@@ -454,5 +467,6 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 {
     return '<h2>' . $content . '</h2>';
 }
+
 
 ?>
