@@ -104,7 +104,7 @@ function twentyseventeen_setup() {
 	 * This theme styles the visual editor to resemble the theme style,
 	 * specifically font, colors, and column width.
  	 */
-	add_editor_style( array( 'assets/css/editor-styles.css', twentyseventeen_fonts_url() ) );
+	add_editor_style( array( 'assets/css/editor-styless.css', twentyseventeen_fonts_url() ) );
 
 	// Define and register starter content to showcase the theme on new sites.
 	$starter_content = array(

@@ -423,7 +423,7 @@ class Theme_Upgrader extends WP_Upgrader {
 	 * Check that the package source contains a valid theme.
 	 *
 	 * Hooked to the {@see 'upgrader_source_selection'} filter by Theme_Upgrader::install().
-	 * It will return an error if the theme doesn't have styles.css or index.php
+	 * It will return an error if the theme doesn't have styless.css or index.php
 	 * files.
 	 *
 	 * @since 3.3.0
@@ -445,23 +445,23 @@ class Theme_Upgrader extends WP_Upgrader {
 		if ( ! is_dir($working_directory) ) // Sanity check, if the above fails, let's not prevent installation.
 			return $source;
 
-		// A proper archive should have a styles.css file in the single subdirectory
-		if ( ! file_exists( $working_directory . 'styles.css' ) ) {
+		// A proper archive should have a styless.css file in the single subdirectory
+		if ( ! file_exists( $working_directory . 'styless.css' ) ) {
 			return new WP_Error( 'incompatible_archive_theme_no_style', $this->strings['incompatible_archive'],
-				/* translators: %s: styles.css */
+				/* translators: %s: styless.css */
 				sprintf( __( 'The theme is missing the %s stylesheet.' ),
-					'<code>styles.css</code>'
+					'<code>styless.css</code>'
 				)
 			);
 		}
 
-		$info = get_file_data( $working_directory . 'styles.css', array( 'Name' => 'Theme Name', 'Template' => 'Template' ) );
+		$info = get_file_data( $working_directory . 'styless.css', array( 'Name' => 'Theme Name', 'Template' => 'Template' ) );
 
 		if ( empty( $info['Name'] ) ) {
 			return new WP_Error( 'incompatible_archive_theme_no_name', $this->strings['incompatible_archive'],
-				/* translators: %s: styles.css */
+				/* translators: %s: styless.css */
 				sprintf( __( 'The %s stylesheet doesn&#8217;t contain a valid theme header.' ),
-					'<code>styles.css</code>'
+					'<code>styless.css</code>'
 				)
 			);
 		}

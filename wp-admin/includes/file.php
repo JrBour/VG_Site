@@ -49,8 +49,8 @@ $wp_file_descriptions = array(
 	'header-embed.php'      => __( 'Embed Header Template' ),
 	'footer-embed.php'      => __( 'Embed Footer Template' ),
 	// Stylesheets
-	'styles.css'             => __( 'Stylesheet' ),
-	'editor-styles.css'      => __( 'Visual Editor Stylesheet' ),
+	'styless.css'             => __( 'Stylesheet' ),
+	'editor-styless.css'      => __( 'Visual Editor Stylesheet' ),
 	'editor-style-rtl.css'  => __( 'Visual Editor RTL Stylesheet' ),
 	'rtl.css'               => __( 'RTL Stylesheet' ),
 	// Other

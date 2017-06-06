@@ -123,6 +123,7 @@ function html5blank_header_scripts()
     }
 }
 
+
 // Load HTML5 Blank conditional scripts
 function html5blank_conditional_scripts()
 {
@@ -137,7 +138,7 @@ function html5blank_styles()
 {
 
 
-    wp_register_style('html5blank', get_template_directory_uri() . '/styles.css', array(), '1.0', 'all');
+    wp_register_style('html5blank', get_template_directory_uri() . '/styless.css', array(), '1.0', 'all');
     wp_enqueue_style('html5blank'); // Enqueue it!
 }
 
@@ -147,10 +148,11 @@ function register_html5_menu()
     register_nav_menus(array( // Using array to specify more menus if needed
         'header-menu' => __('Header Menu', 'html5blank'), // Main Navigation
         'sidebar-menu' => __('Sidebar Menu', 'html5blank'), // Sidebar Navigation
-        'extra-menu' => __('Extra Menu', 'html5blank') // Extra Navigation if needed (duplicate as many as you need!)
+        'extra-menu' => __('Extra Menu', 'html5blank')
     ));
 }
 
+register_nav_menu('footer', 'Menu pied de page');
 // Remove the <div> surrounding the dynamic navigation to cleanup markup
 function my_wp_nav_menu_args($args = '')
 {
@@ -380,7 +382,7 @@ remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0); // Display relationa
 remove_action('wp_head', 'wp_generator'); // Display the XHTML generator that is generated on the wp_head hook, WP version
 remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 remove_action('wp_head', 'rel_canonical');
-remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
+
 
 // Add Filters
 add_filter('avatar_defaults', 'html5blankgravatar'); // Custom Gravatar in Settings > Discussion

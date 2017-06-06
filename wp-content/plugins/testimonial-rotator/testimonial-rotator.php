@@ -56,7 +56,7 @@ function testimonial_rotator_enqueue_scripts()
 
 	wp_enqueue_script( 'cycletwo', plugins_url('/js/jquery.cycletwo.js', __FILE__), array('jquery'), false, $load_scripts_in_footer );
 	wp_enqueue_script( 'cycletwo-addons', plugins_url('/js/jquery.cycletwo.addons.js', __FILE__), array('jquery', 'cycletwo'), false, $load_scripts_in_footer );
-	wp_enqueue_style( 'testimonial-rotator-style', plugins_url('/testimonial-rotator-styles.css', __FILE__) );
+	wp_enqueue_style( 'testimonial-rotator-style', plugins_url('/testimonial-rotator-styless.css', __FILE__) );
 
 	$hide_font_awesome = get_option( 'testimonial-rotator-hide-fontawesome' );
 	$hide_font_awesome = ($hide_font_awesome == 1) ? true : false;

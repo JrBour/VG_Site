@@ -1,0 +1,1335 @@
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700');
+@import url('https://fonts.googleapis.com/css?family=Cardo:400,700');
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+.row {
+    margin: 0;
+}
+*,
+*:after,
+*:before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/* html element 62.5% font-size for REM use */
+
+body {
+    font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #444;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1{
+
+}
+h2{
+    color: #000;
+}
+p{
+    color: white;
+}
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+a {
+    color: #444;
+    text-decoration: none;
+}
+a:hover {
+    color: #444;
+}
+a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+a:hover,
+a:active {
+    outline: 0;
+}
+input:focus {
+    outline: 0;
+    border: 1px solid #04A4CC;
+}
+
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+/* wrapper */
+.wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.page-item-90, .page-item-110, .page-item-8, .page-item-101{
+    line-height: 100px;
+    font-size: 2em;
+    padding-left: 60px;
+}
+.page-item-90{
+    margin-left: 100px;
+}
+.page-item-8{
+    margin-left: 500px;
+}
+.page-item-10{
+    display: none;
+}
+ul {
+    list-style: none;
+}
+ul li {
+    display: inline-block;
+}
+
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-brand-centered {
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 160px;
+        text-align: center;
+
+    }
+
+    .navbar > .container .navbar-brand-centered,
+    .navbar > .container-fluid .navbar-brand-centered {
+        margin-left: -80px;
+    }
+}
+/*------------------------------------*\
+    INDEX
+\*------------------------------------*/
+.blog_index {
+    height: 400px;
+    background: white;
+    margin-bottom: 50px;
+}
+.containerSlogan {
+    margin: 0;
+    padding-top: 30vh;
+    width: 100%;
+    height: 100vh;
+    background: url("img/bc53a78342bfe9b6ce0cc81a02766930.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.containerSlogan h2 {
+    color: white;
+    font-size: 8em;
+}
+.containerSlogan h3 {
+    color: white;
+    font-size: 6em;
+}
+.textSlogan {
+
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+.textSlogan h2 {
+    font-family: 'Roboto Condensed';
+    font-weight:700;
+}
+.textSlogan h3 {
+    font-family:'Roboto Condensed';
+    font-weight: 100;
+}
+.border_index {
+    border: 1px solid white;
+    margin-left: 23%;
+    margin-right: 23%;
+    opacity: 0.4;
+}
+
+
+.index_slogan{
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 20%;
+
+}
+#image_slogan{
+    background-image: url("../html5blank-stable/img/bodybuilding_femme.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#slogan{
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 20%;
+}
+
+#slogan1 {
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+
+#slogan2 {
+    font-size: 27px;
+    text-align: center;
+    color: white;
+
+}
+
+.first_cours{
+    background-color: #d8d8d8;
+}
+.second_cours {
+    background-color: #00163D;
+    color: white;
+    margin: 0;
+    text-align: left;
+}
+
+.second_cours p, .second_cours h3 {
+    margin-top: 20px;
+    text-align: right;
+}
+.coaching_sportif{
+    margin-top: 150px;
+}
+.coaching_sportif2{
+    margin-top: 150px;
+}
+.second_cours h3, .first_cours h3 {
+    font-size: 4em;
+}
+.second_cours p, .first_cours p {
+    font-size: 2em;
+    padding-bottom: 30px;
+}
+.coaching_sportif h3:after{
+    content:"";
+    position: absolute;
+    height: 2px;
+    background: black;
+    width: 400px;
+    left: -20px;
+    top: 75px;
+}
+.coaching_sportif2 h3:after {
+    content:"";
+    position: absolute;
+    height: 2px;
+    background: white;
+    width: 400px;
+    right: -14px;
+    top: 75px;
+}
+.first_back{
+    background: url("img/TRX_detour.png");
+    background-size: 70%;
+    background-repeat:no-repeat;
+    background-position: right;
+    height: 500px;
+}
+@media screen and (max-width: 768px){
+    .first_back{
+        background: url("img/TRX_detour.png");
+        background-size: 100%;
+        margin-bottom: -40px;
+        background-repeat:no-repeat;
+        background-position: right;
+        height: 500px;
+    }
+}
+.second_back{
+    background: url("img/planche_femme.png");
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: right;
+    height: 500px;
+}
+.container_index{
+    height: 70px;
+}
+.title_index {
+    font-size: 5em;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 100;
+}
+@media only screen and (max-width:768px){
+    .single-blog h1:after {
+        display: none;
+    }
+    .coaching_sportif2 h3:after {
+        display: none;
+    }
+    .coaching_sportif h3:after{
+        display: none;
+    }
+    .second_cours {
+        background-color: #00163D;
+        height: auto;
+        color: white;
+        margin: 0;
+        text-align: left;
+    }
+    .second_cours .coaching_sportif2 {
+        margin-top: 30px;
+        padding-bottom: 50px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .single-blog h1:after {
+        display: none;
+    }
+    .coaching_sportif2 h3:after {
+        display: none;
+    }
+    .coaching_sportif h3:after{
+        display: none;
+    }
+    .coaching_sportif2 h3:after {
+        content:"";
+        position: absolute;
+        display: none;
+    }
+    #slogan{
+        margin-top: 15%;
+    }
+
+    #slogan1 {
+        font-size: 25px;
+    }
+
+    #slogan2 {
+        font-size: 21px;
+    }
+
+    #img_sportif {
+        background-repeat: no-repeat;
+        background-size: 88%;
+        width: 59%;
+        margin: 0;
+        float: left;
+        height: 400px;
+    }
+
+    #img_sportif2 {
+        background-repeat: no-repeat;
+        background-size: 97%;
+        width: 40%;
+        margin: 0;
+        float: right;
+        height: 400px;
+        width: 41%;
+    }
+
+    #coaching_sportif {
+        width: 50%;
+        display: inline-block;
+        margin-top: 64px;
+        text-align: right;
+    }
+
+    #coaching_sportif2{
+        width: 50%;
+        display: inline-block;
+        margin-top: 64px;
+        text-align: left;
+    }
+    #partie_sport2{
+        text-align: left;
+    }
+
+    /*FOOTER*/
+    #contact_footer{
+        margin-top: 25px;
+        text-align: center;
+        margin: auto;
+    }
+    #liens_footer{
+        text-align: center;
+        margin: auto;
+    }
+    /*------------------------------------*\
+    BLOG
+\*------------------------------------*/
+
+    .lib-panel {
+        margin-bottom: 20Px;
+    }
+
+    .lib-panel img {
+        width: 50%;
+        background-color: transparent;
+        margin-left: 25%;
+    }
+
+    .lib-panel .lib-row.lib-header {
+        padding: 8px 10px 0px 20px;
+    }
+
+}
+
+@media only screen and (min-width: 1364px) {
+    #img_sportif{
+        height: 307px;
+        width: 438px;
+        background-repeat: no-repeat;
+        background-size: 71%;
+    }
+    #img_sportif2{
+        height: 400px;
+        width: 438px;
+        background-size: 72%;
+        background-repeat: no-repeat;
+        padding: 0;
+        margin-left: 232px;
+    }
+    #coaching_sportif{
+        text-align: right;
+        margin-top: 85px;
+    }
+
+
+}
+/*------------------------------------*\
+    BLOG
+\*------------------------------------*/
+.header2 {
+    margin-top: 50px;
+}
+.text {
+    height: 450px;
+}
+.text h4 {
+    font-size: 3em;
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+.text p {
+    font-size: 2em;
+    font-weight: 100;
+    color: black;
+}
+.row_blog{
+    margin-bottom: 50px;
+}
+.thumbnail_border {
+    height: 450px;
+    overflow: hidden;
+}
+.thumbnail{
+    height: 400px;
+    width: 100%;
+    transform: scale(1.3);
+    padding: 0;
+    border: none;
+    overflow: hidden;
+}
+.col-lg-8 {
+    padding: 0;
+    margin: 0;
+}
+.col-lg-10{
+    padding: 0;
+}
+.blog_gardye{
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: white;
+    box-shadow: -1px -1px 6px black;
+}
+
+/**********
+SINGLE BLOG
+**********/
+.single-blog{
+    margin-left: 30px;
+    padding-right: 20px;
+}
+.single-blog p {
+    font-size: 1.3em;
+    font-family: 'Lora' ;
+    font-weight: 300;
+    text-align: justify;
+}
+.single-blog h1 {
+    font-size: 4.5em;
+    color: black;
+    font-family: 'Pathway Gothic One';
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom:20px;
+}
+.single-blog h2 {
+    font-family:'Pathway Gothic One';
+    font-size: 2.4em;
+    margin-top: 20px;
+}
+.single-blog a {
+    color: black;
+}
+.single-blog a:hover {
+    text-decoration: none;
+}
+.single-blog p {
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.aside_blog{
+    border-left: 1px solid black;
+    margin: 30px  20px 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.aside_blog p {
+    position: relative;
+    text-align: justify;
+}
+.aside_blog .view-article:hover{
+    text-decoration: none;
+}
+.aside_blog .view-article{
+    color: black;
+    font-size: 1.1em;
+}
+.aside_blog h4 {
+    position: relative;
+    text-align: center;
+}
+.thumbnail_aside {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+.aside_blog h4:after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    bottom: -6px;
+    left: 5%;
+    background: black;
+}
+.aside_blog p{
+    color: black;
+}
+.thumbnail_single {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+@media screen and (max-width: 768px){
+    .thumbnail_single {
+        position: absolute;
+        left: 0;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+    .aside_blog{
+        border: none;
+    }
+}
+.thumbnail_single_post{
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+.date {
+    text-align: right;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 2em;
+}
+.author {
+    text-align: right;
+    font-size: 1.3em;
+}
+.authorName{
+    font-weight: 500;
+}
+.img-responsive {
+    width: 100%;
+}
+.lib-panel {
+    margin-bottom: 20Px;
+}
+
+.lib-panel img {
+    width: 100%;
+    background-color: transparent;
+}
+
+.lib-panel .row,
+.lib-panel .col-md-6 {
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+.lib-panel .lib-row {
+    padding: 0 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header {
+    background-color: #FFFFFF;
+    font-size: 20px;
+    padding: 10px 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header .lib-header-seperator {
+    height: 2px;
+    width: 26px;
+    background-color: #d9d9d9;
+    margin: 7px 0 7px 0;
+}
+
+.lib-panel .lib-row.lib-desc {
+    position: relative;
+    height: 100%;
+    display: block;
+    font-size: 13px;
+}
+
+.lib-panel .lib-row.lib-desc a {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 20px;
+}
+
+.row-margin-bottom {
+    margin-bottom: 20px;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .10);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .10);
+}
+
+.no-padding {
+    padding: 0;
+}
+
+/*------------------------------------*\
+    COURS
+\*------------------------------------*/
+.containerBox{
+    height: 300px;
+    background: url("img/shutterstock_103383050.jpg");
+    background-size: cover;
+    background-position: 90%;
+}
+.containerBox h1 {
+    font-weight: 100;
+    font-size: 6em;
+    color: white;
+}
+.partie_cours h1 {
+    text-align: center;
+    font-size: 38px;
+    margin: 0.67em 0;
+    text-decoration: underline
+}
+.TRX {
+    height: 500px;
+    background: url('img/TRX.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.cpg {
+    background: url('img/coaching-personnel-centre-sport_189.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.cpgg{
+    background: url('img/47985218_Subscription_XXL-2B-3-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+.col-lg-12 {
+    padding: 0;
+}
+.crossfit{
+    background: url('img/crossfit-image.png');
+    height: 400px;
+    background-size: cover;
+}
+.pilates {
+    background: url('img/bg-pilates.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.text-box {
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+footer ul li a:hover {
+    color: grey;
+    text-decoration: none;
+}
+nav ul li a {
+    position: relative;
+    transition: 2s ease;
+}
+nav ul li a:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    background: purple;
+    bottom: -10px;
+    opacity: 0;
+    transition: all .4s linear ;
+}
+nav ul li a:hover {
+    text-decoration: none;
+}
+nav ul li a:hover:after {
+    opacity: 1;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .crossfit{
+        height: 600px;
+        background-position: center;
+    }
+    .TRX{
+        height: 900px;
+    }
+    .cpg {
+        height: 600px;
+        background-position: center;
+    }
+    .cpgg{
+        background-position: center;
+    }
+}
+.text-box:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.textCour {
+    color: #FFF;
+    position: absolute;
+    text-align: center;
+}
+
+.background {
+    margin-top: 40px;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+    padding: 2%;
+}
+.background p {
+    font-size: 1.5em;
+    text-align: left;
+}
+.background h4 {
+    font-size: 5em;
+    text-align: left;
+}
+.background2 {
+    margin-top: 40px;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+    padding: 2%;
+}
+.background2 h4{
+    text-align: right;
+}
+
+.background2 p {
+    font-size: 1.5em;
+}
+.background2 h4 {
+    font-size: 5em;
+}
+.navbar {
+    margin-bottom: 0;
+}
+
+.gradien {
+    border-bottom: solid 3px;
+    margin: 3%;
+    position: relative;
+    left: -19%;
+    width: 62%;
+}
+
+.text2Cour {
+    color: #FFF;
+    text-align: center;
+}
+
+.text2Cour:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.gradien2 {
+    border-bottom: solid 3px;
+    margin: 3%;
+    position: relative;
+    left: 48%;
+    width: 62%;
+}
+
+/*------------------------------------*\
+    TARIF
+\*------------------------------------*/
+
+.header_tarif{
+    background: url('img/bodybuilding_femme.jpg');
+    height: 300px;
+    margin-bottom: 100px;
+}
+h1{
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Roboto';
+    font-weight: 100;
+    color: black;
+}
+
+.offre_flex {
+    margin: 50px auto;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+}
+.textTarif {
+    text-transform: uppercase;
+    color: white;
+    font-weight: lighter;
+    font-size: 20px;
+    letter-spacing: .1em;
+    display: block;
+    top: 20%;
+    left: 0;
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.text_tarif_content {
+    display: block;
+    text-transform: none;
+    font-style: italic;
+    font-size: 80%;
+    color: whitesmoke;
+}
+
+.containerTarif {
+    display: inline-block;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: calc(25% - 30px);
+    margin-left: 15px;
+    -webkit-transition: all 5s linear;
+    -moz-transition: all 5s linear;
+    -ms-transition: all 5s linear;
+    -o-transition: all 5s linear;
+    transition: all 5s linear;
+
+}
+
+
+
+.container_tarif h3 {
+    text-align: center;
+    font-size: 3em;
+}
+.offre1{
+    background: url("img/bodybuilding_femme.jpg");
+
+}
+.offre2{
+    background: url("img/offre2.jpg");
+
+}
+.offre3 {
+    background: url('img/d365338f38a195182f021cf45a5b6ff8.jpg');
+
+
+}
+.offre4{
+    background: url('img/homme_al.png');
+    margin-right: 15px;
+
+}
+.text_tarif_titre{
+    padding-top: 20px;
+}
+.text_tarif_content{
+    font-size: 4em;
+    text-align: center;
+    padding-top: 60px;
+}
+
+/*------------------------------------*\
+    FOOTER
+\*------------------------------------*/
+footer{
+    background-color: #292929;
+    color:white;
+}
+footer li {
+    display: block;
+    color: white;
+    font-size: 1.4em;
+}
+footer ul li a {
+    color: white;
+}
+.links {
+    margin-top: 50px;
+}
+.logo_footer{
+
+}
+.contact_footer {
+    background: url('img/screenshot_adresse.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 160px;
+    float: right;
+    margin: 50px 150px 0 0;
+}
+.flexRS{
+    display: flex;
+    justify-content: center;
+}
+
+.smGlobalBtn { /* global button class */
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0 5px #999;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    line-height: 2em;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    margin-left: 10px;
+}
+/* facebook button class*/
+.facebookBtn {
+    background: #4060A5;
+}
+.facebookBtn:before { /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+.facebookBtn:hover {
+    text-decoration: none;
+    color: #4060A5;
+    background: #fff;
+}
+/* twitter button class*/
+.twitterBtn {
+    background: #00ABE3;
+}
+.twitterBtn:before {
+    font-family: "FontAwesome";
+    content: "\f099"; /* add twitter icon */
+}
+.twitterBtn:hover {
+    text-decoration: none;
+    color: #00ABE3;
+    background: #fff;
+}
+/* google plus button class*/
+.instaBtn {
+    background: #e64522;
+}
+.instaBtn:before {
+    font-family: "FontAwesome";
+    content: "\f16d"; /* add googleplus icon */
+}
+.instaBtn:hover {
+    text-decoration: none;
+    color: #e64522;
+    background: #fff;
+}
+
+.copyright {
+    margin-top:3%;
+    color: white;
+    text-align: center;
+}
+
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+    /*------------------------------------*\
+        SLOGAN
+    \*------------------------------------*/
+    #slogan1 {
+        font-size: 16px;
+        margin: 53px;
+    }
+
+    #slogan2 {
+        font-size: 13px;
+        margin: -47px;
+    }
+
+    #slogan {
+        height: 152px;
+    }
+
+    /*------------------------------------*\
+        COACHING SPORTIF
+    \*------------------------------------*/
+    .partie_sportif {
+        height: 400px;
+    }
+
+    /*COURS*/
+
+    .partie_cours h1 {
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .partie_sportif {
+        height: 400px;
+    }
+
+    #img_sportif {
+        background-repeat: no-repeat;
+        background-size: 61%;
+        height: 206px;
+        width: 289px;
+        margin-left: 31%;
+    }
+
+    #coaching_sportif {
+        text-align: center;
+        margin-left: -80px;
+    }
+
+
+    /*------------------------------------*\
+        COACHING SPORTIF 2
+    \*------------------------------------*/
+    .partie_sportif2 {
+        height: 400px;
+    }
+
+    #img_sportif2 {
+        height: 89px;
+        width: 200px;
+    }
+
+    /*COURS*/
+    .partie_cours h1 {
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .partie_sportif2 {
+        height: 400px;
+    }
+
+    #img_sportif {
+        background-repeat: no-repeat;
+        background-size: 40%;
+    }
+
+    #img_sportif2 {
+        background-repeat: no-repeat;
+        background-size: 61%;
+        height: 206px;
+        width: 289px;
+    }
+
+    #coaching_sportif2 {
+        text-align: center;
+        margin-left: -80px;
+        height: 300px;
+    }
+
+    #partie_sport2 {
+        margin-left: 90px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+
+    /*------------------------*\
+        FOOTER
+    \*------------------------*/
+    #liens_footer {
+        text-align: left;
+    }
+
+    #logo_footer {
+        margin-left: 43%;
+    }
+
+    .contact_footer {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-size: 1.4em;
+        line-height: 2em;
+    }
+
+}
+
+
+
+.navbar {
+    position: relative;
+    min-height: 76px;
+    background-color: #fff;
+    /* margin-bottom: 20px; */
+    border: 1px solid transparent;
+}
+.logo_footer{
+    position: relative;
+    height: 160px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: url('img/logo_other.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.logo_footer:after{
+    content:"";
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    right: 20px;
+    z-index: -1;
+    background: white;
+    border-radius: 50%;
+}
+footer h5 {
+    font-size: 2em;
+}
+@media screen and (min-width: 768px){
+    .navbar-brand-centered {
+        position: absolute;
+        left: calc(50% - 50px);
+        display: block;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        z-index: 1132;
+        background: url("img/logo.png");
+        background-size: contain;
+        background-repeat:no-repeat;
+        background-position: center;
+    }
+    .navbar-brand {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+/*presentation*/
+
+.text-title{
+    margin-top: 50px;
+    height: 600px;
+    background: url("img/383.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.text-title h1 {
+    color: white;
+    line-height: 300px;
+}
+.section1{
+    height: 400px;
+    width: 100%
+}
+.section2{
+    margin-top: 50px;
+    background-color: #eee;
+}
+.section2 p {
+    color: black;
+}
+.par-sec2{
+    padding: 30px 30px;
+}
+.img_pres{
+    background: url('img/girl-sport.jpg');
+    background-size: cover;
+    height: 425px;
+}
+.section3{
+    height: 400px;
+
+}
+.section4{
+    padding: 20px;
+}
+
+.paragraphe-prez{
+    width: 82%;
+    margin: auto;
+
+    font-size: 17px;
+    color: #555;
+}
+.h2-prez{
+    color: #636363;
+    margin-left: 40%;
+    padding: 48px;
+}
+.textures{
+    position: absolute;
+    height: 500px;
+    width: 100%;
+}
+.about{
+    margin-top: 0;
+    font-size: 3vw;
+}
+.petit-p{
+    width: 90%;
+    text-align: justify;
+    font-size: 17px;
+}
+.icon-section{
+    margin-top: 118px;
+    width: 90%;
+    margin-left: 5%;
+}
+.p-icon{
+    font-size: 17px;
+    text-align: center;
+}
+.last{
+    color: #555;
+    font-size: 17px;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+/*fb*/
+.social_text{
+    width: 100%;
+}
+.comments_face{
+    width: 100%;
+    margin: auto;
+
+}
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container-fluid {
+    padding: 0;
+}
+.row {
+    overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+    .text-title h1 {
+        font-size: 2em;
+    }
+
+    .section3 {
+        height: auto;
+        padding: 20px;
+    }
+
+    ul li {
+        display: block;
+    }
+
+    .page-item-90, .page-item-110, .page-item-8, .page-item-101 {
+        line-height: 3em;
+        text-align: center;
+        font-size: 2em;
+        padding-left: 0;
+    }
+
+    .page-item-90 {
+        margin-left: 0px;
+    }
+
+    .page-item-8 {
+        margin-left: 0px;
+    }
+
+    .page-item-10 {
+        display: none;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1050px){
+    .page-item-90 {
+        margin-left: 30px;
+    }
+    .page-item-8 {
+        margin-left: 300px;
+    }
+}
